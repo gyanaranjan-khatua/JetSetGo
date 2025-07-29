@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Left: Logo */}
         <div className="flex-shrink-0">
           <Link to="/">
-            <img src={logo} alt="Logo" className="h-10 w-10" />
+            <img src={logo} alt="Logo" className="h-10 w-15" />
           </Link>
         </div>
 

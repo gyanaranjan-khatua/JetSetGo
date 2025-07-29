@@ -1,6 +1,7 @@
 import React from 'react'
 import TravelServices from '../Sections/TravelServices'
 import TestimonialSection from '../components/Testimonial'
+import Faq from './Faq'
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
     <>
     <TravelServices/>
     <TestimonialSection />
+    <Faq/>
     </>
   )
 }
