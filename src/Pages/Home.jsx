@@ -1,8 +1,12 @@
 import React from 'react'
+import TravelServices from '../Sections/TravelServices'
 
 function Home() {
   return (
-    <div>Home</div>
+    
+    <>
+    <TravelServices/>
+    </>
   )
 }
 
