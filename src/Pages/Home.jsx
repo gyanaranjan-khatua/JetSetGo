@@ -4,6 +4,7 @@ import TestimonialSection from '../components/Testimonial'
 import Faq from './Faq'
 import About from './About'
 import AboutContent from '../Sections/AboutContent'
+import DestinationShowcase from '../components/Tours'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
     <>
     <AboutContent />
     <TravelServices/>
+    <DestinationShowcase />
     <TestimonialSection />
     <Faq/>
     </>
