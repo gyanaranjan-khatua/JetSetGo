@@ -1,8 +1,8 @@
 "use client"
 import { motion } from "framer-motion"
 import { Shield, Award, Clock, Users, ChevronRight, Sparkles, Target, Heart, Zap } from "lucide-react"
-import aboutimg from '../assets/aboutimg.jpg'
-import bgcar from '../assets/carRoad.jpg'
+import aboutimg from '../assets/airticket.jpg'
+import bgcar from '../assets/CarRental.jpg'
 import {Link} from 'react-router-dom'
 const AboutContent = () => {
   // Animation variants
@@ -45,34 +45,34 @@ const AboutContent = () => {
   }
 
   const stats = [
-  { number: "5,000+", label: "Happy Riders Served", icon: Users },
-  { number: "500+", label: "Verified Cab Partners", icon: Award },
-  { number: "24/7", label: "Service Availability", icon: Clock },
-  { number: "99%", label: "On-Time Arrival Rate", icon: Shield },
+    { number: "10,000+", label: "Travelers Assisted", icon: Users },
+    { number: "1,000+", label: "Destinations Covered", icon: Award },
+    { number: "24/7", label: "Global Support", icon: Clock },
+    { number: "Top-Rated", label: "Customer Satisfaction", icon: Shield },
 ];
 
 
   const values = [
-  {
-    icon: Sparkles,
-    title: "Transparent Pricing",
-    description: "No surge charges or hidden fees—what you see is what you pay.",
-  },
-  {
-    icon: Target,
-    title: "Easy Accessibility",
-    description: "Book a cab anytime, anywhere—our services are available across cities 24/7.",
-  },
-  {
-    icon: Heart,
-    title: "Customer-Centric",
-    description: "We prioritize your comfort, safety, and satisfaction in every ride.",
-  },
-  {
-    icon: Zap,
-    title: "Smart Technology",
-    description: "From live tracking to instant booking, our tech makes every ride smooth and efficient.",
-  },
+    {
+      icon: Sparkles,
+      title: "Personalized Experiences",
+      description: "Crafting unique itineraries that cater to your individual travel dreams.",
+    },
+    {
+      icon: Target,
+      title: "Seamless Planning",
+      description: "From flights to accommodations, we handle every detail for a stress-free journey.",
+    },
+    {
+      icon: Heart,
+      title: "Customer-First Approach",
+      description: "Your satisfaction is our priority, ensuring comfort and joy at every step.",
+    },
+    {
+      icon: Zap,
+      title: "Innovation in Travel",
+      description: "Utilizing cutting-edge tools to provide efficient and memorable travel solutions.",
+    },
 ];
 
 
@@ -80,9 +80,9 @@ const AboutContent = () => {
     <>
     <div className=" min-h-screen overflow-hidden">
       {/* Hero Section */}
-      <section className="relative   px-6 lg:px-8">
+      <section className="relative  px-6 lg:px-8">
         {/* Decorative elements */}
-       
+        
 
         <div className="max-w-7xl mx-auto relative">
           <motion.div
@@ -94,35 +94,35 @@ const AboutContent = () => {
             {/* Text Section */}
             <motion.div className="md:w-1/2 mb-12 md:mb-0" variants={itemVariants}>
               <motion.div
-                className="inline-flex items-center gap-2 shadow-lg backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-green-700  mb-6"
+                className="inline-flex items-center gap-2 shadow-lg backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-black  mb-6"
                 variants={scaleVariants}
               >
-                <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-red-500 rounded-full"></span>
                 Our Story
               </motion.div>
 
              <motion.h1
-  className="text-4xl md:text-4xl text-green-700 roboto lg:text-5xl font-extrabold mb-6 leading-tight"
+  className="text-4xl md:text-4xl text-black roboto lg:text-5xl font-extrabold mb-6 leading-tight"
   variants={itemVariants}
 >
   About{" "}
-  <span className="text-black">
-    Hello <span className="text-yellow-500">Drive</span>
+  <span className="text-red-500">
+    JetSet<span className="text-red-500">GO</span>
   </span>
 </motion.h1>
 
 <motion.p className="text-gray-700 text-lg md:text-xl mb-6 leading-relaxed" variants={itemVariants}>
-  At <strong>Hello Drive</strong>, we make commuting easy, affordable, and reliable. Whether it’s a quick city trip or a long-distance journey, our cab services are designed to get you there safely, comfortably, and on time.
+  At <strong>JetSetGO</strong>, we believe every journey should be an unforgettable adventure. We specialize in crafting personalized travel experiences that take you beyond the ordinary, offering seamless planning and exceptional service from start to finish.
 </motion.p>
 
 <motion.p className="text-gray-800 font-medium text-lg md:text-xl mb-8 leading-relaxed" variants={itemVariants}>
-  We blend smart technology with dedicated customer care, helping thousands of riders enjoy hassle-free travel experiences—anytime, anywhere.
+  We combine expert knowledge with a passion for travel, helping thousands explore new horizons, discover hidden gems, and create memories that last a lifetime.
 </motion.p>
 
 
               <motion.div variants={itemVariants}>
-                <button className="bg-gradient-to-r from-green-600 to-green-800 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
-                 <Link to='/heroSearch' >Book Now</Link>
+                <button className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
+                 <Link to='/heroSearch' >Plan Your Trip</Link>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </motion.div>
@@ -138,8 +138,8 @@ const AboutContent = () => {
                   transition={{ delay: 0.8, duration: 0.6 }}
                 >
                   <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-gray-800">Since 2023</span>
+                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                    <span className="text-sm font-medium text-gray-800">Established 2010</span>
                   </div>
                 </motion.div>
 
@@ -150,8 +150,8 @@ const AboutContent = () => {
                   transition={{ delay: 1, duration: 0.6 }}
                 >
                   <div className="flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-blue-600" />
-                    <span className="text-sm font-medium text-gray-800">Safety First</span>
+                    <Shield className="w-4 h-4 text-red-600" />
+                    <span className="text-sm font-medium text-gray-800">Your Travel Partner</span>
                   </div>
                 </motion.div>
 
@@ -190,12 +190,12 @@ const AboutContent = () => {
               return (
                 <motion.div
                   key={index}
-                  className="bg-white backdrop-blur-sm rounded-sm  p-6 shadow-lg border-t-2 border-yellow-600 hover:shadow-xl transition-all duration-300"
+                  className="bg-white backdrop-blur-sm rounded-sm  p-6 shadow-lg border-t-2 border-orange-600 hover:shadow-xl transition-all duration-300"
                   variants={fadeInUpVariants}
                   whileHover={{ y: -5 }}
                 >
                   <div className="shadow-lg w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-green-700" />
+                    <IconComponent className="w-6 h-6 text-red-500" />
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</h3>
                   <p className="text-gray-600">{stat.label}</p>
@@ -235,8 +235,8 @@ const AboutContent = () => {
         Our Core Values
       </h2>
       <p className="text max-w-2xl text-lg mx-auto">
-        These values drive everything we do at Hello Drive—from how we serve
-        our customers to how we improve every ride experience.
+        These values drive everything we do at JetSetGO—from how we curate
+        your journey to how we ensure every moment is extraordinary.
       </p>
     </motion.div>
 
@@ -256,7 +256,7 @@ const AboutContent = () => {
             whileHover={{ y: -5 }}
           >
             <div className="bg-white shadow-lg w-12 h-12 rounded-full flex items-center justify-center mb-4">
-              <IconComponent className="w-6 h-6 text-green-600" />
+              <IconComponent className="w-6 h-6 text-orange-600" />
             </div>
             <h3 className="text-xl  font-bold mb-2">
               {value.title}
@@ -285,44 +285,44 @@ const AboutContent = () => {
   <div className="flex flex-col md:flex-row">
     {/* Left Section */}
     <div className="md:w-1/2 p-8 md:p-12">
-      <h2 className="text-3xl font-bold roboto text-gray-900 mb-4">Ready to Book Your Ride?</h2>
+      <h2 className="text-3xl font-bold roboto text-gray-900 mb-4">Ready to Explore the World?</h2>
       <p className="text-gray-600 mb-6">
-        Join thousands of happy riders who trust <strong>Hello Drive</strong> for safe, reliable, and affordable cab services—anytime, anywhere.
+        Join thousands of satisfied travelers who trust <strong>JetSetGO</strong> for unforgettable journeys, seamless planning, and exceptional adventures—any destination, any dream.
       </p>
 
-      <button className="bg-gradient-to-r from-green-600 to-green-800 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
-        <Link to='/heroSearch'>Book Now</Link>
+      <button className="bg-gradient-to-r from-red-600 to-orange-700 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
+        <Link to='/heroSearch'>Start Your Adventure</Link>
         <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </button>
     </div>
 
     {/* Right Section */}
-    <div className="md:w-1/2 bg-gradient-to-br from-green-800 to-green-700 p-8 md:p-12 text-white">
-      <h3 className="text-2xl font-bold roboto mb-4">Why Ride with Hello Drive?</h3>
+    <div className="md:w-1/2 bg-gradient-to-br from-orange-500 to-red-700 p-8 md:p-12 text-white">
+      <h3 className="text-2xl font-bold roboto mb-4">Why Travel with JetSetGO?</h3>
       <ul className="space-y-3">
         <li className="flex items-start gap-3">
           <div className="bg-white/20 rounded-full p-1 mt-1">
             <ChevronRight className="w-4 h-4" />
           </div>
-          <span>Instant cab bookings, 24/7 availability</span>
+          <span>Expertly curated itineraries for every traveler</span>
         </li>
         <li className="flex items-start gap-3">
           <div className="bg-white/20 rounded-full p-1 mt-1">
             <ChevronRight className="w-4 h-4" />
           </div>
-          <span>Trained and verified professional drivers</span>
+          <span>Comprehensive support from booking to return</span>
         </li>
         <li className="flex items-start gap-3">
           <div className="bg-white/20 rounded-full p-1 mt-1">
             <ChevronRight className="w-4 h-4" />
           </div>
-          <span>Transparent pricing with no hidden charges</span>
+          <span>Exclusive deals and personalized recommendations</span>
         </li>
         <li className="flex items-start gap-3">
           <div className="bg-white/20 rounded-full p-1 mt-1">
             <ChevronRight className="w-4 h-4" />
           </div>
-          <span>Responsive customer support whenever you need</span>
+          <span>Unwavering commitment to your safety and enjoyment</span>
         </li>
       </ul>
     </div>

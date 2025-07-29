@@ -1,8 +1,13 @@
 import React from 'react'
+import TopHero from '../components/TopHero'
+import AboutContent from '../Sections/AboutContent'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+<TopHero name="About Us" />
+<AboutContent />
+</>
   )
 }
 
