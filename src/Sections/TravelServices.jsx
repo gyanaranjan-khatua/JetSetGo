@@ -6,6 +6,8 @@ import HotelBooking from "./../assets/HotelBooking.jpg"
 import ForexAssistance from "./../assets/ForexAssistance.jpg"
 import TravelInsurance from "./../assets/TravelInsurance.jpg"
 import CarRental from "./../assets/CarRental.jpg"
+import wedding from "./../assets/wedding.jpg"
+import event from "./../assets/event.jpg"
 
 import { motion } from "framer-motion"
 import {
@@ -107,7 +109,7 @@ const services = [
     title: "Destination Wedding",
     description: "Plan your dream wedding in exotic locations with our complete event management.",
     icon: Heart,
-    image: "/placeholder.svg?height=200&width=300&text=Destination+Wedding",
+    image: wedding,
     gradient: "from-pink-500 to-rose-500",
   },
   {
@@ -115,7 +117,7 @@ const services = [
     title: "MICE",
     description: "Corporate events, conferences, and incentive travel programs tailored to your needs.",
     icon: Users,
-    image: "/placeholder.svg?height=200&width=300&text=MICE+Events",
+    image: event,
     gradient: "from-slate-500 to-gray-600",
   },
 ]
