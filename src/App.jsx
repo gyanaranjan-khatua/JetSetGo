@@ -6,6 +6,7 @@ import Gallery from "./Pages/Gallery"
 import Home from "./Pages/Home"
 import Navbar from "./Navbar/navbar"
 import Faq from "./Pages/Faq"
+import Footer from "./Footer/Footer"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path="/faq" element={<Faq />} />
 
      </Routes>
+    <Footer />
     </>
   )
 }
