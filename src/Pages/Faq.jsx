@@ -90,9 +90,9 @@ export default function Faq() {
     <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-zinc-900 to-black py-24 px-6 md:px-12 overflow-hidden text-white">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full mix-blend-screen filter blur-xl opacity-30 animate-pulse"></div>
+        {/* <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full mix-blend-screen filter blur-xl opacity-30 animate-pulse"></div>
         <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-pink-900 to-yellow-900 rounded-full mix-blend-screen filter blur-xl opacity-25 animate-pulse animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-r from-green-900 to-blue-900 rounded-full mix-blend-screen filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
+        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-r from-green-900 to-blue-900 rounded-full mix-blend-screen filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div> */}
 
         {/* Floating particles */}
         {[...Array(20)].map((_, i) => (

@@ -1,84 +1,199 @@
-// src/components/Footer.jsx
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaInstagram, FaFacebook, FaTwitter, FaGlobe, FaPlaneDeparture } from 'react-icons/fa';
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaStore,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const socialIcons = [
-  { icon: <FaInstagram />, link: '#' },
-  { icon: <FaFacebook />, link: '#' },
-  { icon: <FaTwitter />, link: '#' },
-  { icon: <FaGlobe />, link: '#' },
-];
+// Import your images
+ // Example image
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-br from-zinc-900 via-slate-900 to-red-900 text-gray-300 overflow-hidden ">
-      {/* Glass effect + overlay blur */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-black/20 z-0" />
-
-      <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative z-10 max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10"
-      >
-        {/* Logo + Tagline */}
+    <footer className="bg-black text-white pt-10">
+      {/* Top Section */}
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 lg:grid-col-4 gap-10">
+        {/* About Us */}
         <div>
-          <h2 className="text-3xl font-extrabold text-white flex items-center gap-2">
-            <FaPlaneDeparture className="text-red-500" />
-            TravelXplore
-          </h2>
-          <p className="mt-3 text-sm text-gray-400">
-            Your journey begins here. Custom tours, exotic destinations, and world-class service.
+          <h3 className="text-xl font-bold mb-2">About us</h3>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
+          <p className="text-sm leading-relaxed text-gray-300">
+            <strong>Hello Drive</strong> is a{" "}
+            <strong>top-rated self-drive car rental service provider in Odisha</strong>. Our goal
+            is to offer well-maintained cars at <strong>reasonable prices</strong> and{" "}
+            <strong>provide hassle-free services</strong> to our customers. Contact us for a
+            comfortable and memorable ride.
           </p>
-        </div>
-
-        {/* Explore */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">Explore</h3>
-          <ul className="space-y-2 text-sm">
-            {["Home", "Destinations", "Packages", "About Us", "Contact"].map((item, index) => (
-              <li key={index}>
-                <a href="#" className="hover:text-red-500 transition duration-300">{item}</a>
-              </li>
-            ))}
-          </ul>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 bg-orange-500 text-white px-5 py-2 rounded hover:bg-lime-700 transition"
+          >
+            Latest Blogs <FaExternalLinkAlt className="w-4 h-4" />
+          </Link>
         </div>
 
         {/* Services */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">Our Services</h3>
-          <ul className="space-y-2 text-sm">
-            {["Flight Booking", "Hotel Deals", "Tour Packages", "Visa Assistance"].map((item, index) => (
-              <li key={index}>
-                <a href="#" className="hover:text-red-500 transition duration-300">{item}</a>
-              </li>
-            ))}
+          <h3 className="text-xl font-bold mb-2">Services</h3>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
+          <ul className="space-y-2 text-gray-300 text-sm">
+             <li>
+              <Link to="/" className="hover:text-white">
+               Air Ticket
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                Passport Assistance
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                Visa Assistance
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                Hotel Booking
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+               Forex Assistance
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                Travel Insurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                Car Rental
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                Destination Wedding 
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-white">
+                MICE
+              </Link>
+            </li>
           </ul>
         </div>
 
-        {/* Social Media */}
+        {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>
-          <div className="flex gap-5 mt-2">
-            {socialIcons.map((item, index) => (
-              <motion.a
-                key={index}
-                href={item.link}
-                whileHover={{ scale: 1.3, color: '#ef4444' }}
-                transition={{ type: 'spring', stiffness: 300 }}
-                className="text-xl text-gray-400 hover:text-red-500 transition duration-300"
-              >
-                {item.icon}
-              </motion.a>
-            ))}
+          <h3 className="text-xl font-bold mb-2">Quick Links</h3>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
+          <ul className="space-y-2 text-gray-300 text-sm">
+            <li>
+              <Link to="/" className="hover:text-white">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-white">
+                About
+              </Link>
+            </li>
+             <li>
+              <Link to="/CarPage" className="hover:text-white">
+              Cars
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-white">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/faq" className="hover:text-white">
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="hover:text-white">
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Social Network */}
+        <div>
+          <h3 className="text-xl font-bold mb-2">Social Network</h3>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
+          <div className="flex gap-3 mb-4">
+            <a
+              href="#"
+              className="p-2 bg-gray-800 hover:bg-lime-600 rounded"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="#"
+              className="p-2 bg-gray-800 hover:bg-lime-600 rounded"
+            >
+              <FaInstagram />
+            </a>
+            <a href="#" className="p-2 bg-gray-800 hover:bg-lime-600 rounded">
+              <FaStore />
+            </a>
+          </div>
+          <p className="text-sm text-white font-semibold">Address:</p>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            HIG-C/98, HB Colony, Baramunda,
+            <br />
+            Bhubaneswar
+          </p>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            {/* Plot No. - 440, Swarnapuri Road, Kanan Vihar Phase - 2 , Patia, Bhubaneswar, Odisha. <br />
+              Hello Drive: Pincode- 751024   */}
+          </p>
+          <p className="text-sm text-white font-semibold">Phone:</p>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            {/* +918926116060
+            <br />
+           +919090375666 */}
+          </p>
+          <p className="text-sm text-white font-semibold">Email:</p>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            {/* hellodrive60@gmail.com */}
+          </p>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="mt-10 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+          <div className="flex items-center gap-3 mb-3 md:mb-0">
+            <p>
+              Copyright 2025 -{" "}
+              <span className="text-white font-semibold">JetSetGo</span>
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <Link to="/contact" className="hover:text-white">
+              Help & Support
+            </Link>
+            <span className="text-white">|</span>
+            <Link to="/faq" className="hover:text-white">
+              FAQs
+            </Link>
           </div>
         </div>
-      </motion.div>
 
-      {/* Footer Bottom */}
-      <div className="relative z-10 border-t border-gray-700 text-center text-sm text-gray-500 py-5">
-        © {new Date().getFullYear()} TravelXplore. All rights reserved.
+        {/* Approved Line with Images */}
+        
       </div>
     </footer>
   );

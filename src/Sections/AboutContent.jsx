@@ -97,7 +97,7 @@ const AboutContent = () => {
                 className="inline-flex items-center gap-2 shadow-lg backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-black  mb-6"
                 variants={scaleVariants}
               >
-                <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                 Our Story
               </motion.div>
 
@@ -121,7 +121,7 @@ const AboutContent = () => {
 
 
               <motion.div variants={itemVariants}>
-                <button className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
+                <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
                  <Link to='/heroSearch' >Plan Your Trip</Link>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -190,12 +190,12 @@ const AboutContent = () => {
               return (
                 <motion.div
                   key={index}
-                  className="bg-white backdrop-blur-sm rounded-sm  p-6 shadow-lg border-t-2 border-orange-600 hover:shadow-xl transition-all duration-300"
+                  className="bg-white backdrop-blur-sm rounded-sm  p-6 shadow-lg border-t-2 border-blue-600 hover:shadow-xl transition-all duration-300"
                   variants={fadeInUpVariants}
                   whileHover={{ y: -5 }}
                 >
                   <div className="shadow-lg w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-red-500" />
+                    <IconComponent className="w-6 h-6 text-sky-500" />
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</h3>
                   <p className="text-gray-600">{stat.label}</p>
@@ -256,7 +256,7 @@ const AboutContent = () => {
             whileHover={{ y: -5 }}
           >
             <div className="bg-white shadow-lg w-12 h-12 rounded-full flex items-center justify-center mb-4">
-              <IconComponent className="w-6 h-6 text-orange-600" />
+              <IconComponent className="w-6 h-6 text-sky-600" />
             </div>
             <h3 className="text-xl  font-bold mb-2">
               {value.title}
@@ -290,7 +290,7 @@ const AboutContent = () => {
         Join thousands of satisfied travelers who trust <strong>JetSetGO</strong> for unforgettable journeys, seamless planning, and exceptional adventures—any destination, any dream.
       </p>
 
-      <button className="bg-gradient-to-r from-red-600 to-orange-700 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
+      <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
         <Link to='/heroSearch'>Start Your Adventure</Link>
         <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </button>

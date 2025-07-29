@@ -62,7 +62,7 @@ const services = [
     description: "Complete guidance for passport applications, renewals, and documentation.",
     icon: FileText,
     image:PassportAssistance,
-    gradient: "from-green-500 to-emerald-500",
+    gradient: "from-orange-500 to-red-500",
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ const services = [
     description: "Expert visa consultation and application support for all destinations worldwide.",
     icon: Globe,
     image: visa,
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-blue-500 to-cyan-500",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ const services = [
     description: "Currency exchange services with competitive rates and secure transactions.",
     icon: DollarSign,
     image:ForexAssistance,
-    gradient: "from-yellow-500 to-orange-500",
+    gradient: "from-blue-500 to-cyan-500",
   },
   {
     id: 6,
@@ -94,7 +94,7 @@ const services = [
     description: "Comprehensive travel protection covering medical emergencies and trip cancellations.",
     icon: Shield,
     image: TravelInsurance,
-    gradient: "from-teal-500 to-blue-500",
+    gradient: "from-orange-500 to-red-500",
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ const services = [
     description: "Wide selection of vehicles from economy to luxury cars for your travel needs.",
     icon: Car,
     image: CarRental,
-    gradient: "from-indigo-500 to-purple-500",
+    gradient: "from-blue-500 to-cyan-500",
   },
   {
     id: 8,
@@ -110,7 +110,7 @@ const services = [
     description: "Plan your dream wedding in exotic locations with our complete event management.",
     icon: Heart,
     image: wedding,
-    gradient: "from-pink-500 to-rose-500",
+    gradient: "from-orange-500 to-red-500",
   },
   {
     id: 9,
@@ -118,7 +118,7 @@ const services = [
     description: "Corporate events, conferences, and incentive travel programs tailored to your needs.",
     icon: Users,
     image: event,
-    gradient: "from-slate-500 to-gray-600",
+    gradient: "from-blue-500 to-cyan-500",
   },
 ]
 
@@ -185,7 +185,7 @@ const FloatingIcon = ({ icon: Icon, delay, duration }) => (
 
 export default function TravelServices() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-900  to-black py-20 px-4 overflow-hidden">
       {/* Floating Background Icons */}
       <div className="absolute inset-0 overflow-hidden">
         {floatingIcons.map((item, index) => (
@@ -194,7 +194,7 @@ export default function TravelServices() {
       </div>
 
       {/* Background Gradient Orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-red-400/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl"></div>
 
@@ -215,11 +215,11 @@ export default function TravelServices() {
             <Compass className="w-8 h-8 text-blue-600" />
           </motion.div>
 
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-6">
             Our Premium Services
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
             Discover our comprehensive range of travel services designed to make your journey seamless, memorable, and
             extraordinary. From flights to destination weddings, we've got you covered.
           </p>
@@ -244,7 +244,7 @@ export default function TravelServices() {
                 }}
                 className="group"
               >
-                <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                <Card className="h-full bg-white backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
                   <div className="relative">
                     {/* Service Image */}
                     <div className="relative h-48 overflow-hidden">
@@ -313,7 +313,7 @@ export default function TravelServices() {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-center mt-20"
         >
-          <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
+          <div className="bg-white backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
             <h3 className="text-3xl font-bold text-gray-800 mb-4">Ready to Start Your Journey?</h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               Contact our travel experts today and let us create an unforgettable experience tailored just for you.
