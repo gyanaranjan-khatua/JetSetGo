@@ -5,6 +5,7 @@ import Faq from './Faq'
 import About from './About'
 import AboutContent from '../Sections/AboutContent'
 import DestinationShowcase from '../components/Tours'
+import ContactSection from '../components/ContactSec'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     <DestinationShowcase />
     <TestimonialSection />
     <Faq/>
+    <ContactSection />
     </>
   )
 }

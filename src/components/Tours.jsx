@@ -1,54 +1,96 @@
 import React from "react";
 import { motion } from "framer-motion";
+import id1 from "../assets/id1.JPG"
+import id2 from "../assets/id2.JPG"
+import id3 from "../assets/id3.JPG"
+import id4 from "../assets/id4.JPG"
+import id5 from "../assets/id5.JPG"
+import id6 from "../assets/id6.JPG"
+import id7 from "../assets/id7.JPG"
+import id8 from "../assets/id8.JPG"
+import id9 from "../assets/id9.JPG"
+import id10 from "../assets/id10.JPG"
+import id11 from "../assets/id11.JPG"
+import id12 from "../assets/id12.JPG"
+import id13 from "../assets/id13.JPG"
+import id14 from "../assets/id14.JPG"
+import id15 from "../assets/id15.JPG"
+import id16 from "../assets/id16.JPG"
+import id17 from "../assets/id17.JPG"
+import id18 from "../assets/id18.JPG"
+import id19 from "../assets/id19.JPG"
+import id20 from "../assets/id20.JPG"
+import id21 from "../assets/id21.JPG"
+import id22 from "../assets/id22.JPG"
+import id23 from "../assets/id23.JPG"
+import id24 from "../assets/id24.JPG"
+import in1 from "../assets/in1.JPG"
+import in2 from "../assets/in2.JPG"
+import in3 from "../assets/in3.JPG"
+import in4 from "../assets/in4.JPG"
+import in5 from "../assets/in5.JPG"
+import in6 from "../assets/in6.JPG"
+import in7 from "../assets/in7.webp"
+import in8 from "../assets/in8.JPG"
+import in9 from "../assets/in9.JPG"
+import in10 from "../assets/in10.JPG"
+import in11 from "../assets/in11.JPG"
+import in12 from "../assets/in12.JPG"
+import in13 from "../assets/in13.JPG"
+import in14 from "../assets/in14.JPG"
+import in15 from "../assets/in15.JPG"
+import in16 from "../assets/in16.JPG"
+import in17 from "../assets/in17.JPG"
+import in18 from "../assets/in18.JPG"
 
 // Map each destination to an image (Unsplash, royalty-free, or your own)
 const intlImages = {
-  Australia: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
-  Azerbaijan: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
-  Almaty: "https://images.unsplash.com/photo-1464852045489-a120005e79f3?auto=format&fit=crop&w=400&q=80",
-  Bali: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-  Bhutan: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80",
-  Dubai: "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80",
-  Europe: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=400&q=80",
-  Georgia: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-  Hongkong: "https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=400&q=80",
-  Japan: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=400&q=80",
-  Kambodia: "https://images.unsplash.com/photo-1517959105824-1a2702ba0a70?auto=format&fit=crop&w=400&q=80",
-  Malaysia: "https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=400&q=80",
-  Maldives: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80",
-  Mauritius: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
-  Nepal: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=400&q=80",
-  Newzealand: "https://images.unsplash.com/photo-1444090542259-0af8fa96557e?auto=format&fit=crop&w=400&q=80",
-  Oman: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80",
-  Philipines: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-  Srilanka: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80",
-  Singapore: "https://images.unsplash.com/photo-1465101178521-c1a4695f95fd?auto=format&fit=crop&w=400&q=80",
-  Tajikistan: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
-  Thailand: "https://images.unsplash.com/photo-1465101178521-c1a4695f95fd?auto=format&fit=crop&w=400&q=80",
-  Turkey: "https://images.unsplash.com/photo-1438354886727-070458b3b5cf?auto=format&fit=crop&w=400&q=80",
-  Vietnam: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+  Australia: id1,
+  Azerbaijan: id2,
+  Almaty: id3,
+  Bali: id4,
+  Bhutan: id5,
+  Dubai: id6,
+  Europe: id7,
+  Georgia: id8,
+  Hongkong: id9,
+  Japan: id10,
+  Cambodia: id11,
+  Malaysia: id12,
+  Maldives: id13,
+  Mauritius: id14,
+  Nepal: id15,
+  Newzealand: id16,
+  Oman: id17,
+  Philipines: id18,
+  Srilanka: id19,
+  Singapore: id20,
+  Tajikistan: id21,
+  Thailand: id22,
+  Turkey: id23,
+  Vietnam: id24,
 };
 
 const indiaImages = {
-  "Guwahati -Shillong": "https://images.unsplash.com/photo-1464739164804-bd7c9cd3be45?auto=format&fit=crop&w=400&q=80",
-  "Arunachal Pradesh": "https://images.unsplash.com/photo-1484910292437-025e5d13ce87?auto=format&fit=crop&w=400&q=80",
-  "Sikkim -Darjeeling": "https://images.unsplash.com/photo-1464852045489-a120005e79f3?auto=format&fit=crop&w=400&q=80",
-  Kolkata: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80",
-  Odisha: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=400&q=80",
-  "Madhya Pradesh": "https://images.unsplash.com/photo-1444090542259-0af8fa96557e?auto=format&fit=crop&w=400&q=80",
-  Visakhapatnam: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80",
-  Tamilnadu: "https://images.unsplash.com/photo-1438354886727-070458b3b5cf?auto=format&fit=crop&w=400&q=80",
-  Kerala: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80",
-  "Hyderabad Telangana": "https://images.unsplash.com/photo-1465101178521-c1a4695f95fd?auto=format&fit=crop&w=400&q=80",
-  Maharashtra: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
-  Uttarakhand: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-  Gujarat: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=400&q=80",
-  Rajasthan: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
-  Himachal: "https://images.unsplash.com/photo-1465101178521-c1a4695f95fd?auto=format&fit=crop&w=400&q=80",
-  Kashmir: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80",
-  Uttarpradesh: "https://images.unsplash.com/photo-1444090542259-0af8fa96557e?auto=format&fit=crop&w=400&q=80",
-  "Golden Triangle": "https://images.unsplash.com/photo-1444090542259-0af8fa96557e?auto=format&fit=crop&w=400&q=80",
-  "Leh-Ladakh": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80",
+  "Guwahati -Shillong": in1,
+  "Arunachal Pradesh": in2,
+  "Sikkim -Darjeeling": in3,
+  Kolkata: in4,
+  Odisha: in5,
+  "Madhya Pradesh": in6,
+  Visakhapatnam: in7,
+  Tamilnadu: in8,
+  Kerala: in9,
+  "Hyderabad Telangana": in10,
+  Maharashtra: in11,
+  Uttarakhand: in12,
+  Gujarat: in13,
+  Rajasthan: in14,
+  Himachal: in15,
+  Kashmir: in16,
+  Uttarpradesh: in17,
+//   "Golden Triangle": "https://images.unsplash.com/photo-1444090542259-0af8fa96557e?auto=format&fit=crop&w=400&q=80",
+  "Leh-Ladakh": in18,
 };
 
 const fallbackIntl = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80";
@@ -56,7 +98,7 @@ const fallbackIndia = "https://images.unsplash.com/photo-1464739164804-bd7c9cd3b
 
 const International = [
   "Australia", "Azerbaijan", "Almaty", "Bali", "Bhutan", "Dubai", "Europe",
-  "Georgia", "Hongkong", "Japan", "Kambodia", "Malaysia", "Maldives", "Mauritius",
+  "Georgia", "Hongkong", "Japan", "Cambodia", "Malaysia", "Maldives", "Mauritius",
   "Nepal", "Newzealand", "Oman", "Philipines", "Srilanka", "Singapore", "Tajikistan",
   "Thailand", "Turkey", "Vietnam"
 ];
@@ -64,7 +106,9 @@ const Indian = [
   "Guwahati -Shillong", "Arunachal Pradesh", "Sikkim -Darjeeling", "Kolkata", "Odisha",
   "Madhya Pradesh", "Visakhapatnam", "Tamilnadu", "Kerala", "Hyderabad Telangana",
   "Maharashtra", "Uttarakhand", "Gujarat", "Rajasthan", "Himachal", "Kashmir",
-  "Uttarpradesh", "Golden Triangle", "Leh-Ladakh"
+  "Uttarpradesh", 
+//   "Golden Triangle", 
+  "Leh-Ladakh"
 ];
 
 const Card = ({ name, img, country }) => (
