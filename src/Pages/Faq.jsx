@@ -87,7 +87,7 @@ export default function Faq() {
   }
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-zinc-900 to-black py-24 px-6 md:px-12 overflow-hidden text-white">
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-zinc-900 to-black py-14 px-6 md:px-12 overflow-hidden text-white">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0">
         {/* <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full mix-blend-screen filter blur-xl opacity-30 animate-pulse"></div>
@@ -130,14 +130,14 @@ export default function Faq() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-700 to-purple-800 rounded-full mb-6 shadow-lg"
+            className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-red-500 to-orange-400 rounded-full mb-6 shadow-lg"
           >
             <HelpCircle className="w-10 h-10 text-white" />
           </motion.div>
 
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-50 via-blue-200 to-purple-200 bg-clip-text text-transparent mb-6 leading-tight">
-            Frequently Asked
-            <span className="block">Questions</span>
+          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-50 via-blue-200 to-purple-200 bg-clip-text text-transparent mb-6 leading-tight">
+            Frequently Asked Questions
+            
           </h2>
 
           <motion.div
@@ -145,7 +145,7 @@ export default function Faq() {
             whileInView={{ width: "100px" }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="h-1 bg-gradient-to-r from-blue-700 to-purple-800 mx-auto mb-6 rounded-full"
+            className="h-1 bg-gradient-to-r from-red-500 to-orange-400 mx-auto mb-6 rounded-full"
           />
 
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
@@ -166,7 +166,7 @@ export default function Faq() {
               className="group"
             >
               <motion.div
-                className={`relative bg-gray-800/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 cursor-pointer transition-all duration-300 ${
+                className={`relative bg-gray-800/80 backdrop-blur-sm rounded-xl p-5 border border-gray-700/50 cursor-pointer transition-all duration-300 ${
                   openIndex === index ? "shadow-2xl shadow-blue-900/20 border-blue-700/50" : "shadow-lg hover:shadow-xl"
                 }`}
                 whileHover={{
@@ -177,8 +177,8 @@ export default function Faq() {
               >
                 {/* Gradient border effect */}
                 <div
-                  className={`absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 p-[2px] transition-opacity duration-300 ${
-                    openIndex === index ? "opacity-100" : "opacity-0 group-hover:opacity-50"
+                  className={`absolute inset-0 rounded-xl bg-gradient-to-r  from-red-600  to-orange-400 p-[2px] transition-opacity duration-300 ${
+                    openIndex === index ? "opacity-100" : "opacity-0 group-hover:opacity-90"
                   }`}
                 >
                   <div className="bg-gray-900 rounded-3xl h-full w-full" />
@@ -197,7 +197,7 @@ export default function Faq() {
                       >
                         {faq.icon}
                       </motion.div>
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-200 group-hover:text-blue-400 transition-colors duration-300">
+                      <h3 className="text-lg md:text-xl font-bold text-gray-200 group-hover:text-blue-400 transition-colors duration-300">
                         {faq.question}
                       </h3>
                     </div>
@@ -207,7 +207,7 @@ export default function Faq() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className={`ml-4 p-2 rounded-full transition-all duration-300 ${
                         openIndex === index
-                          ? "bg-gradient-to-r from-blue-700 to-purple-800 text-white shadow-lg"
+                          ? "bg-gradient-to-r from-red-700 to-orange-800 text-white shadow-lg"
                           : "bg-gray-700 text-gray-400 group-hover:bg-blue-900 group-hover:text-blue-200"
                       }`}
                     >
@@ -258,9 +258,9 @@ export default function Faq() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-700 to-purple-800 rounded-3xl p-8 text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-blue-700 to-sky-600 rounded-3xl p-8 text-white shadow-2xl">
             <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
-            <p className="text-blue-200 mb-6 text-lg">
+            <p className="text-blue-100 mb-6 text-lg">
               {"We're here to help! Reach out to us for any additional information."}
             </p>
             <motion.button

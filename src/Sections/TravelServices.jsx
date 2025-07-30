@@ -313,12 +313,12 @@ export default function TravelServices() {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-center mt-20"
         >
-          <div className="bg-white backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
-            <h3 className="text-3xl font-bold text-gray-800 mb-4">Ready to Start Your Journey?</h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-xl border border-white/20">
+            <h3 className="text-3xl font-bold text-gray-100 mb-4">Ready to Start Your Journey?</h3>
+            <p className="text-gray-100 mb-6 max-w-2xl mx-auto">
               Contact our travel experts today and let us create an unforgettable experience tailored just for you.
             </p>
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold text-lg hover:scale-105 transition-all duration-300">
+            <Button className="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-red-500 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold text-lg hover:scale-105 transition-all duration-300">
               Get Started Today
             </Button>
           </div>
