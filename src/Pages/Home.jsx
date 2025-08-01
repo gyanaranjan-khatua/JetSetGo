@@ -1,25 +1,27 @@
 import React from 'react'
 import TravelServices from '../Sections/TravelServices'
 // import TestimonialSection from '../components/Testimonial'
-import Faq from './Faq'
-import About from './About'
+
 import AboutContent from '../Sections/AboutContent'
 import DestinationShowcase from '../components/Tours'
 import ContactSection from '../components/ContactSec'
 import Hero from '../Sections/Hero'
 import Testimonial2 from '../components/Testimonial2'
+import FaqSection from '../Sections/FaqSection'
+// import NewHero from '../Sections/NewHero'
 
 function Home() {
   return (
     
     <>
+    {/* <NewHero/> */}
     <Hero />
     
     <AboutContent />
     <TravelServices/>
     <DestinationShowcase />
     <Testimonial2 />
-    <Faq/>
+    <FaqSection/>
     <ContactSection />
     </>
   )

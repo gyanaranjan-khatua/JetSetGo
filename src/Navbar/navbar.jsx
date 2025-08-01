@@ -10,7 +10,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-white/40 backdrop-blur-lg shadow-md">
       <nav className="max-w-7xl mx-auto  flex items-center justify-between px-4 py-3 md:py-5 lg:py-6">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
@@ -32,9 +32,12 @@ export default function Navbar() {
         {/* Right: Button & Mobile Menu Icon */}
         <div className="flex items-center gap-4">
           {/* Desktop Get Started Button */}
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition hidden md:inline-block">
+          <Link to="/book">
+          
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition hidden md:inline-block">
             Get Started
           </button>
+          </Link>
 
           {/* Mobile Hamburger Icon */}
           <button
@@ -54,7 +57,7 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed inset-0 z-50 bg-white p-6 flex flex-col md:hidden"
+            className="fixed inset-0 z-50 bg-white pl-5 h-screen flex flex-col lg:hidden"
           >
             <div className="flex justify-between items-center mb-6">
               <img src={logo} alt="Logo" className="h-8 w-auto" />
@@ -63,18 +66,21 @@ export default function Navbar() {
               </button>
             </div>
 
-            <ul className="flex flex-col gap-6 text-lg text-gray-700 font-medium">
+            <ul className="flex flex-col bg-white p-5 gap-6 text-lg text-gray-700 font-medium">
               <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
               <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
               <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
               <li><Link to="/blogs" onClick={() => setMenuOpen(false)}>Blogs</Link></li>
               <li>
+                <Link to="/book">
+               
                 <button
                   className="mt-6 bg-blue-600 text-white w-full py-2 rounded-md hover:bg-blue-700"
                   onClick={() => setMenuOpen(false)}
                 >
                   Get Started
                 </button>
+                 </Link>
               </li>
             </ul>
           </motion.div>

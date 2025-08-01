@@ -13,7 +13,7 @@ const testimonials = [
     name: 'Sarah Johnson',
     role: 'Marketing Director',
     company: 'Acme Inc.',
-    content: 'The service was exceptional! Our engagement increased by 200% after implementing their solution. Highly recommended for anyone looking to boost their online presence.',
+    content: 'The service was exceptional! Our engagement increased by 200% after implementing their solution...',
     avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
   {
@@ -21,7 +21,7 @@ const testimonials = [
     name: 'Michael Chen',
     role: 'CTO',
     company: 'TechStart',
-    content: 'Incredible attention to detail and customer support. They went above and beyond to ensure our project was successful. Will definitely work with them again.',
+    content: 'Incredible attention to detail and customer support. They went above and beyond to ensure our project was successful...',
     avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
   {

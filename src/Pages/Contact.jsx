@@ -1,8 +1,13 @@
 import React from 'react'
+import TopHero from '../components/TopHero'
+import ContactSection from '../components/ContactSec'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+    <TopHero name="Contact"/>
+    <ContactSection/>
+    </>
   )
 }
 

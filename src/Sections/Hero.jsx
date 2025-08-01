@@ -7,37 +7,66 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import "swiper/css/effect-fade"
 import { ChevronLeft, ChevronRight, Phone, Calendar, Star, MapPin } from "lucide-react"
-
+import DisneyLandParis from "./../assets/heroimg/DisneyLandParis.jpeg"
+import MountTitlis from "./../assets/heroimg/MountTitlis.jpeg"
+import SwarovskiCrystalmuseum from "./../assets/heroimg/SwarovskiCrystalmuseum.jpeg"
+import Interlaken from "./../assets/heroimg/Interlaken.jpeg"
+import Grindewald from "./../assets/heroimg/Grindewald.jpeg"
+import Amsterdam from "./../assets/heroimg/Amsterdam.jpeg"
+import Vietnam from "./../assets/heroimg/Vietnam.jpeg"
+import { Link } from "react-router-dom"
 // Sample images (replace with your own URLs or imports)
 const slides = [
   {
-    image:
-      "https://images.unsplash.com/photo-1678542561901-5d75778930ef?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
+    image: DisneyLandParis,
     title: "Disney Land Paris",
     description: "Feel the beauty of untouched wilderness and discover hidden gems",
     location: "Swiss Alps",
     rating: 4.9,
   },
   {
-    image:
-      "https://media.istockphoto.com/id/1347088244/photo/kerala-most-beautiful-place-of-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=azs5OiyZpD_zPj96NASr737IVrCq2_m0iu08EVDvIvE=",
-    title: "City Lights",
+    image: MountTitlis,
+    title: "Mount Titlis",
     description: "Discover vibrant cityscapes and urban adventures",
     location: "Kerala, India",
     rating: 4.8,
   },
   {
     image:
-      "https://plus.unsplash.com/premium_photo-1729776349948-ad22bdab1dd2?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
-    title: "Desert Journey",
+      SwarovskiCrystalmuseum,
+    title: "Swarovski Crystal museum",
     description: "Experience the golden sands and mystical desert landscapes",
     location: "Sahara Desert",
     rating: 4.7,
   },
   {
     image:
-      "https://images.unsplash.com/photo-1577688723008-7c501eae6f26?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
-    title: "Mountain Peaks",
+      Interlaken,
+    title: "Interlaken",
+    description: "Reach new heights with breathtaking mountain adventures",
+    location: "Himalayas",
+    rating: 4.9,
+  },
+  {
+    image:
+      Grindewald,
+    title: "Grindewald",
+    description: "Reach new heights with breathtaking mountain adventures",
+    location: "Himalayas",
+    rating: 4.9,
+  },
+  {
+    image:
+     Amsterdam,
+    title: "Amsterdam",
+    description: "Reach new heights with breathtaking mountain adventures",
+    location: "Himalayas",
+    rating: 4.9,
+  },
+  {
+    image:
+      Vietnam,
+    title: "Vietnam",
     description: "Reach new heights with breathtaking mountain adventures",
     location: "Himalayas",
     rating: 4.9,
@@ -72,64 +101,20 @@ function Hero() {
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               {/* Enhanced Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/0  z-10" />
 
               {/* Animated Background Elements */}
-              <div className="absolute inset-0 z-5 overflow-hidden">
-                <motion.div
-                  animate={{
-                    y: [0, -30, 0],
-                    rotate: [0, 180, 360],
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 8, ease: "easeInOut" }}
-                  className="absolute left-10 top-20 w-12 h-12 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full backdrop-blur-sm border border-white/10"
-                />
-                <motion.div
-                  animate={{
-                    y: [0, 40, 0],
-                    rotate: [360, 180, 0],
-                    scale: [1, 0.8, 1],
-                  }}
-                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 10, ease: "easeInOut" }}
-                  className="absolute right-16 bottom-32 w-20 h-20 bg-gradient-to-r from-pink-400/20 to-orange-400/20 rounded-full backdrop-blur-sm border border-white/10"
-                />
-                <motion.div
-                  animate={{
-                    x: [0, 50, 0],
-                    y: [0, -20, 0],
-                    rotate: [0, 90, 180],
-                  }}
-                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 12, ease: "easeInOut" }}
-                  className="absolute left-1/4 bottom-20 w-8 h-8 bg-gradient-to-r from-green-400/20 to-teal-400/20 rounded-full backdrop-blur-sm border border-white/10"
-                />
-              </div>
-
+             
               {/* Main Content */}
               <motion.div
-                className="absolute z-20 inset-0 flex flex-col items-center justify-center text-center text-white px-6 max-w-4xl mx-auto"
+                className="absolute z-20 inset-0 flex flex-col items-center pt-10 text-center text-white px-6 max-w-4xl mx-auto"
                 initial={{ opacity: 0, y: 60, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
               >
-                {/* Location Badge */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.8 }}
-                  className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 mb-6 border border-white/20"
-                >
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-sm font-medium">{slide.location}</span>
-                  <div className="flex items-center gap-1 ml-2">
-                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm">{slide.rating}</span>
-                  </div>
-                </motion.div>
-
-                {/* Title */}
+             
                 <motion.h1
-                  className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent leading-tight"
+                  className="text-3xl md:text-4xl  font-playfair-display lg:text-5xl font-bold mb-6 bg-gradient-to-r from-black/60  px-6 py-2 rounded-full  leading-tight"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 1 }}
@@ -139,7 +124,7 @@ function Hero() {
 
                 {/* Description */}
                 <motion.p
-                  className="text-xl md:text-2xl lg:text-3xl font-light mb-10 text-gray-100 leading-relaxed max-w-3xl mx-auto"
+                  className="text-xl md:text-2xl font-bold lg:text-3xl  mb-1 text-gray-100 leading-relaxed max-w-3xl mx-auto"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 1 }}
@@ -154,25 +139,19 @@ function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.9, duration: 1 }}
                 >
+                  <Link to="/book">
                   <motion.button
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full shadow-2xl transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center"
+                    className="group relative overflow-hidden bg-gradient-to-r from-blue-600/40 to-purple-600/40 hover:from-blue-700/40 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-sm border shadow-2xl transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                     <Calendar className="w-5 h-5 relative z-10" />
                     <span className="relative z-10 text-lg">Book Now</span>
                   </motion.button>
+                  </Link>
 
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="group relative overflow-hidden bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-full border-2 border-white/30 hover:border-white/50 shadow-2xl transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                    <Phone className="w-5 h-5 relative z-10" />
-                    <span className="relative z-10 text-lg">Call Now</span>
-                  </motion.button>
+                 
                 </motion.div>
               </motion.div>
             </div>

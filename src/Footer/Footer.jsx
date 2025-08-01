@@ -21,13 +21,13 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-2">About us</h3>
           <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
-          <p className="text-sm leading-relaxed text-gray-300">
-            <strong>Hello Drive</strong> is a{" "}
-            <strong>top-rated self-drive car rental service provider in Odisha</strong>. Our goal
-            is to offer well-maintained cars at <strong>reasonable prices</strong> and{" "}
-            <strong>provide hassle-free services</strong> to our customers. Contact us for a
-            comfortable and memorable ride.
-          </p>
+         <p className="text-sm leading-relaxed text-gray-300">
+  <strong>JetSetGo</strong> is a{" "}
+  <strong>leading travel agency offering customized tour packages across India and beyond</strong>. Our mission
+  is to provide <strong>affordable, reliable, and seamless travel experiences</strong> for all types of travelers. 
+  Contact us to plan your next <strong>adventure, honeymoon, family vacation, or corporate trip</strong> with ease and confidence.
+</p>
+
           <div className="w-20 h-[2px] bg-gradient-to-r from-red-500 mb-4"></div>
           <Link
             to="/blog"

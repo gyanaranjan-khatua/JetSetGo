@@ -6,66 +6,67 @@ import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
+import dommyimg from "./../assets/dommyman.png"
 
 const testimonials = [
   {
     id: 1,
-    name: "Rajesh Sharma",
-    role: "Business Owner",
-    company: "Tech Solutions Ltd.",
+    name: "Abhilash Panda",
+    // role: "Business Owner",
+    // company: "Tech Solutions Ltd.",
     content:
-      "JetSetGO made our corporate trip to Singapore absolutely seamless! From air tickets to hotel bookings and visa assistance, everything was handled professionally. Our MICE event was a huge success thanks to their attention to detail.",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Jet set go for me is awesome . They planned my Dubai trip nicely. My entire trip was awesome . They arranged everything for me like hotel, transport. Air fair … all they have arranged …",
+    avatar: dommyimg,
     rating: 5,
   },
   {
     id: 2,
-    name: "Priya & Arjun",
-    role: "Newlyweds",
-    company: "Destination Wedding",
+    name: "Santilata Maharana",
+    // role: "Newlyweds",
+    // company: "Destination Wedding",
     content:
-      "Our dream destination wedding in Bali was made possible by JetSetGO! They handled everything from flights for 50+ guests to hotel bookings and even helped with passport renewals. Truly exceptional service!",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "he Vietnam trip through ' Jet set go' was extremely satisfactory. We have enjoyed a lot during our visit to various site seeing spots as well as our stay in cruise ship.. ",
+    avatar: dommyimg,
     rating: 5,
   },
   {
     id: 3,
-    name: "Sarah Mitchell",
-    role: "Travel Blogger",
-    company: "Wanderlust Chronicles",
+    name: "Kalpana Satapathy",
+    // role: "Travel Blogger",
+    // company: "Wanderlust Chronicles",
     content:
-      "As someone who travels frequently, I can say JetSetGO is outstanding! Their forex assistance saved me money, travel insurance gave me peace of mind, and their 24/7 support is unmatched. Highly recommended!",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Dear Biswa, I wanted to express my heartfelt gratitude to you for the exceptional service you provided during our Europe trip from Seamless booking to helpful guidance your tour planning exceeds our expectations.",
+    avatar: dommyimg,
     rating: 5,
   },
   {
     id: 4,
-    name: "Amit Patel",
-    role: "Family Traveler",
-    company: "Family Vacation",
+    name: "Prof. Pradeep Kumar Jena",
+    // role: "Family Traveler",
+    // company: "Family Vacation",
     content:
-      "Planning a family trip to Europe seemed overwhelming until we found JetSetGO. They handled visa assistance for all 6 family members, booked perfect hotels, and even arranged car rentals. Our kids still talk about that trip!",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "It was a great experience. Starting from the inception and initial planning and to the process of procuring obtaining VISA and all the itienary, places to visit, transportation, arrangement of lunch and dinner were excellent...",
+    avatar: dommyimg,
     rating: 5,
   },
   {
     id: 5,
-    name: "Maria Rodriguez",
-    role: "Corporate Executive",
-    company: "Global Enterprises",
+    name: "sushanta mohanty",
+    // role: "Corporate Executive",
+    // company: "Global Enterprises",
     content:
-      "JetSetGO has been our go-to travel partner for all corporate needs. Their MICE services are top-notch, and they've organized successful conferences in 5+ countries. Professional, reliable, and cost-effective!",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Jet Set Go is a reliable and trustworthy travel agency in Odisha. Our family tour plan to Madurai, Rameshwaram Kanyakumari Tirubantapuram well organised by Mr. Biswa. Hotel accommodations were superb...",
+    avatar: dommyimg,
     rating: 5,
   },
   {
     id: 6,
-    name: "David Thompson",
-    role: "Adventure Enthusiast",
-    company: "Solo Traveler",
+    name: "Kalpana patro",
+    // role: "Adventure Enthusiast",
+    // company: "Solo Traveler",
     content:
-      "From getting my passport expedited to booking last-minute flights and comprehensive travel insurance for my adventure trips, JetSetGO has never let me down. They understand travelers' needs perfectly!",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Very nice,beautiful country Vietnam.The people are so good & polite . Jet set go is perfect traveller for the trip.",
+    avatar: dommyimg,
     rating: 5,
   },
 ]
@@ -147,7 +148,7 @@ const Testimonial2 = () => (
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={itemVariants}
-        className="relative"
+        className="relative  "
       >
         <Swiper
           modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
@@ -192,7 +193,7 @@ const Testimonial2 = () => (
           className="pb-20"
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={testimonial.id} className="!w-96">
+            <SwiperSlide key={testimonial.id} className="!w-96 my-10">
               <motion.div
                 whileHover={{
                   y: -8,
@@ -293,7 +294,7 @@ const Testimonial2 = () => (
         transition={{ delay: 0.5, duration: 0.8 }}
         className="text-center mt-20"
       >
-        <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm rounded-2xl border border-white/20">
+        {/* <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm rounded-2xl border border-white/20">
           <div className="flex -space-x-2">
             {testimonials.slice(0, 4).map((testimonial, index) => (
               <img
@@ -309,7 +310,7 @@ const Testimonial2 = () => (
             <p className="text-white font-semibold">Join 2000+ Happy Travelers</p>
             <p className="text-slate-300 text-sm">Let JetSetGO plan your next adventure</p>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
 
