@@ -17,9 +17,10 @@ function Home() {
     {/* <NewHero/> */}
     <Hero />
     
-    <AboutContent />
+   
     <TravelServices/>
     <DestinationShowcase />
+     <AboutContent />
     <Testimonial2 />
     <FaqSection/>
     <ContactSection />
