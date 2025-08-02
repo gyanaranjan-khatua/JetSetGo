@@ -94,7 +94,7 @@ const InternationalTour = () => {
     <section className="bg-gradient-to-b from-gray-900 to-black py-20 px-4 sm:px-8">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold text-white">
-          Explore <span className="text-blue-400">World & India</span> Tours
+          Explore <span className="text-blue-400">World</span> Tours
         </h2>
         <p className="text-gray-400 mt-4">Handpicked destinations for your next adventure.</p>
       </div>

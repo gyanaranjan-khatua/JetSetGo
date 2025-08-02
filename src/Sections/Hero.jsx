@@ -139,7 +139,7 @@ function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.9, duration: 1 }}
                 >
-                  <Link to="/book">
+                  {/* <Link to="/book">
                   <motion.button
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
@@ -149,7 +149,7 @@ function Hero() {
                     <Calendar className="w-5 h-5 relative z-10" />
                     <span className="relative z-10 text-lg">Book Now</span>
                   </motion.button>
-                  </Link>
+                  </Link> */}
 
                  
                 </motion.div>

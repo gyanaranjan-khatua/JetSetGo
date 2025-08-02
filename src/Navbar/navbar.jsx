@@ -73,7 +73,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link to="/book">
             <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-4 py-2 rounded-sm hover:bg-blue-700 transition hidden md:inline-block">
-              Get Started
+              Book Now
             </button>
           </Link>
 
@@ -115,7 +115,7 @@ export default function Navbar() {
                     className="mt-6 bg-blue-600 text-white w-full py-2 rounded-md hover:bg-blue-700"
                     onClick={() => setMenuOpen(false)}
                   >
-                    Get Started
+                    Book Now
                   </button>
                 </Link>
               </li>
