@@ -8,10 +8,11 @@ import logo from "../assets/jetsetgologo.jpeg"; // Replace with your logo
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/40 backdrop-blur-lg shadow-md">
-      <nav className="max-w-7xl mx-auto  flex items-center justify-between px-4 py-3 md:py-5 lg:py-6">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-md">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-3 lg:py-4">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
           <Link to="/">
@@ -20,9 +21,48 @@ export default function Navbar() {
         </div>
 
         {/* Center: Desktop Nav Links */}
-        <ul className="hidden md:flex gap-8 text-gray-700 font-medium">
+        <ul className="hidden md:flex gap-8 font-bold text-black tracking-wider relative">
           <li><Link to="/" className="hover:text-blue-600">Home</Link></li>
           <li><Link to="/about" className="hover:text-blue-600">About</Link></li>
+
+          {/* Tour Dropdown */}
+          <li
+            className="relative"
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
+          >
+            <button className="hover:text-blue-600">Tour</button>
+
+            <AnimatePresence>
+              {isDropdownOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-0 mt-2 bg-white shadow-md rounded-md overflow-hidden z-50 w-48"
+                >
+                  <li>
+                    <Link
+                      to="/internationalTour"
+                      className="block px-4 py-2 hover:bg-blue-100 whitespace-nowrap"
+                    >
+                      International Tour
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/nationalTour"
+                      className="block px-4 py-2 hover:bg-blue-100 whitespace-nowrap"
+                    >
+                      National Tour
+                    </Link>
+                  </li>
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </li>
+
           <li><Link to="/contact" className="hover:text-blue-600">Contact</Link></li>
           <li><Link to="/blog" className="hover:text-blue-600">Blogs</Link></li>
           <li><Link to="/gallery" className="hover:text-blue-600">Gallery</Link></li>
@@ -31,12 +71,10 @@ export default function Navbar() {
 
         {/* Right: Button & Mobile Menu Icon */}
         <div className="flex items-center gap-4">
-          {/* Desktop Get Started Button */}
           <Link to="/book">
-          
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition hidden md:inline-block">
-            Get Started
-          </button>
+            <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-4 py-2 rounded-sm hover:bg-blue-700 transition hidden md:inline-block">
+              Get Started
+            </button>
           </Link>
 
           {/* Mobile Hamburger Icon */}
@@ -73,14 +111,13 @@ export default function Navbar() {
               <li><Link to="/blogs" onClick={() => setMenuOpen(false)}>Blogs</Link></li>
               <li>
                 <Link to="/book">
-               
-                <button
-                  className="mt-6 bg-blue-600 text-white w-full py-2 rounded-md hover:bg-blue-700"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Get Started
-                </button>
-                 </Link>
+                  <button
+                    className="mt-6 bg-blue-600 text-white w-full py-2 rounded-md hover:bg-blue-700"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Get Started
+                  </button>
+                </Link>
               </li>
             </ul>
           </motion.div>
