@@ -292,7 +292,7 @@ const destinationDetails = {
     { name: "Hoi An", image: v4 },
     { name: "Sapa", image: v5 },
   ],
-   "Guwahati Shillong": [
+   "Guwahati -Shillong": [
     { name: "Kamakhya Temple", image: "/assets/guwahati1.jpg" },
     { name: "Umiam Lake", image: "/assets/shillong1.jpg" },
     { name: "Elephant Falls", image: "/assets/shillong2.jpg" },
@@ -306,7 +306,7 @@ const destinationDetails = {
     { name: "Dirang", image: "/assets/arunachal4.jpg" },
     { name: "Sela Pass", image: "/assets/arunachal5.jpg" },
   ],
-  "Sikkim Darjeeling": [
+  "Sikkim -Darjeeling": [
     { name: "Tsomgo Lake", image: "/assets/sikkim1.jpg" },
     { name: "Nathula Pass", image: "/assets/sikkim2.jpg" },
     { name: "Darjeeling Himalayan Railway", image: "/assets/darjeeling1.jpg" },
