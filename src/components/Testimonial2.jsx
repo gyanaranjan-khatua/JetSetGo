@@ -7,7 +7,7 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
 import dommyimg from "./../assets/dommyman.png"
-
+import { Link } from "react-router-dom"
 const testimonials = [
   {
     id: 1,
@@ -292,7 +292,7 @@ const Testimonial2 = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.8 }}
-        className="text-center mt-20"
+        className="text-center flex justify-center mt-2 "
       >
         {/* <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm rounded-2xl border border-white/20">
           <div className="flex -space-x-2">
@@ -311,6 +311,11 @@ const Testimonial2 = () => (
             <p className="text-slate-300 text-sm">Let JetSetGO plan your next adventure</p>
           </div>
         </div> */}
+        <Link to="https://www.google.com/search?sca_esv=4280d836da54d7ab&rlz=1C1GCEJ_enIN976IN976&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E46da67bwjd8TrVnxQJkR7uO5jD4gmBsQAI18h649oMY46k6zjr-A5ZCJQJJpjf-6X4iVXIDZCkjV6P6o-fAmiul32OxhtKaGPX2oE2n7dnWG90emA%3D%3D&q=Jet+Set+Go+Holidays+Reviews&sa=X&ved=2ahUKEwih5aKLxuuOAxVeUGwGHXvYGA8Q0bkNegQIIhAE&cshid=1754117826547857&biw=1536&bih=730&dpr=1.25#lrd=0x3a19a798ab5adb8f:0xe0a210e0ffc58b38,3,,,," target="_blank" rel="noopener noreferrer">
+        <h1 className="text-sm bg-gradient-to-r from-yellow-500 via-white to-orange-300 p-2 md:text-md lg:text-lg font-bold text-black rounded border border-white mt-10">
+          Review In Google
+        </h1>
+        </Link>
       </motion.div>
     </div>
 

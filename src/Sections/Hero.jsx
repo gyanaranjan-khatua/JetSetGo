@@ -114,7 +114,7 @@ function Hero() {
               >
              
                 <motion.h1
-                  className="text-3xl md:text-4xl  font-playfair-display lg:text-5xl font-bold mb-6 bg-gradient-to-r from-black/60  px-6 py-2 rounded-full  leading-tight"
+                  className="text-3xl md:text-4xl playfair-display lg:text-5xl font-bold mb-6 bg-gradient-to-r from-black/60  px-6 py-2 rounded-full  leading-tight"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 1 }}
@@ -124,7 +124,7 @@ function Hero() {
 
                 {/* Description */}
                 <motion.p
-                  className="text-xl md:text-2xl font-bold lg:text-3xl  mb-1 text-gray-100 leading-relaxed max-w-3xl mx-auto"
+                  className="text-xl md:text-2xl font-bold lg:text-3xl josefin-sans  mb-1 text-gray-100 leading-relaxed max-w-3xl mx-auto"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 1 }}

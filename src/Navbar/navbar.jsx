@@ -12,16 +12,16 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-md">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-3 lg:py-4">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4  ">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
           <Link to="/">
-            <img src={logo} alt="Logo" className="h-10 w-15" />
+            <img src={logo} alt="Logo" className="h-18 w-25" />
           </Link>
         </div>
 
         {/* Center: Desktop Nav Links */}
-        <ul className="hidden md:flex gap-8 font-bold text-black tracking-wider relative">
+        <ul className="hidden md:flex  gap-8 font-bold text-black tracking-wider relative">
           <li><Link to="/" className="hover:text-blue-600">Home</Link></li>
           <li><Link to="/about" className="hover:text-blue-600">About</Link></li>
 

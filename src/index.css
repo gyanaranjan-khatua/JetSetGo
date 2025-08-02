@@ -7,3 +7,10 @@
   font-weight: 800; /* or 400, 600 etc. */
   font-style: normal;
 }
+
+.josefin-sans{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
