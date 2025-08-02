@@ -1,178 +1,298 @@
 import { useLocation, useNavigate, } from "react-router-dom";
 import { motion } from "framer-motion";
 import React from "react";
+import a1 from "../assets/places/aus1.jpg"
+import a2 from "../assets/places/aus2.jpg"
+import a3 from "../assets/places/aus3.jpg"
+import a4 from "../assets/places/aus4.jpg"
+import a5 from "../assets/places/aus5.jpg"
+import az1 from "../assets/places/az1.jpg"
+import az2 from "../assets/places/az2.jpg"
+import az3 from "../assets/places/az3.jpg"
+import az4 from "../assets/places/az4.jpg"
+import az5 from "../assets/places/az5.jpg"
+import ay1 from "../assets/places/ay1.jpg"
+import ay2 from "../assets/places/ay2.jpg"
+import ay3 from "../assets/places/ay3.jpg"
+import ay4 from "../assets/places/ay4.jpg"
+import ay5 from "../assets/places/ay5.jpg"
+import bali1 from "../assets/places/bali1.jpg"
+import bali2 from "../assets/places/bali2.jpg"
+import bali3 from "../assets/places/bali3.jpg"
+import bali4 from "../assets/places/bali4.jpg"
+import bali5 from "../assets/places/bali5.jpg"
+import bhu1 from "../assets/places/bhu1.jpg"
+import bhu2 from "../assets/places/bhu2.jpg"
+import bhu3 from "../assets/places/bhu3.jpg"
+import bhu4 from "../assets/places/bhu4.jpg"
+import bhu5 from "../assets/places/bhu5.jpg"
+import du1 from "../assets/places/du1.jpg"
+import du2 from "../assets/places/du2.jpg"
+import du3 from "../assets/places/du3.jpg"
+import du4 from "../assets/places/du4.jpg"
+import du5 from "../assets/places/du5.jpg"
+import e1 from "../assets/places/e1.jpg"
+import e2 from "../assets/places/e2.jpg"
+import e3 from "../assets/places/e3.jpg"
+import e4 from "../assets/places/e4.jpg"
+import e5 from "../assets/places/e5.jpg"
+import g1 from "../assets/places/g1.jpg"
+import g2 from "../assets/places/g2.jpg"
+import g3 from "../assets/places/g3.jpg"
+import g4 from "../assets/places/g4.jpg"
+import g5 from "../assets/places/g5.jpg"
+import h1 from "../assets/places/h1.jpg"
+import h2 from "../assets/places/h2.png"
+import h3 from "../assets/places/h3.jpg"
+import h4 from "../assets/places/h4.jpg"
+import h5 from "../assets/places/h5.jpg"
+import j1 from "../assets/places/j1.jpg"
+import j2 from "../assets/places/j2.jpg"
+import j3 from "../assets/places/j3.jpg"
+import j4 from "../assets/places/j4.jpg"
+import j5 from "../assets/places/j5.jpg"
+import k1 from "../assets/places/k1.jpg"
+import k2 from "../assets/places/k2.jpg"
+import k3 from "../assets/places/k3.jpg"
+import k4 from "../assets/places/k4.jpg"
+import k5 from "../assets/places/k5.jpg"
+import m1 from "../assets/places/m1.jpg"
+import m2 from "../assets/places/m2.jpg"
+import m3 from "../assets/places/m3.jpg"
+import m4 from "../assets/places/m4.jpg"
+import m5 from "../assets/places/m5.jpg"
+import mal1 from "../assets/places/mal1.jpg"
+import mal2 from "../assets/places/mal2.jpg"
+import mal3 from "../assets/places/mal3.jpg"
+import mal4 from "../assets/places/mal4.jpg"
+import mal5 from "../assets/places/mal5.jpg"
+import mau1 from "../assets/places/mau1.jpg"
+import mau2 from "../assets/places/mau2.jpg"
+import mau3 from "../assets/places/mau3.jpg"
+import mau4 from "../assets/places/mau4.jpg"
+import mau5 from "../assets/places/mau5.jpg"
+import ne1 from "../assets/places/ne1.jpg"
+import ne2 from "../assets/places/ne2.jpg"
+import ne3 from "../assets/places/ne3.jpg"
+import ne4 from "../assets/places/ne4.jpg"
+import ne5 from "../assets/places/ne5.jpg"
+import nz1 from "../assets/places/nz1.jpg"
+import nz2 from "../assets/places/nz2.jpg"
+import nz3 from "../assets/places/nz3.jpg"
+import nz4 from "../assets/places/nz4.jpg"
+import nz5 from "../assets/places/nz5.jpg"
+import o1 from "../assets/places/o1.jpg"
+import o2 from "../assets/places/o2.jpg"
+import o3 from "../assets/places/o3.jpg"
+import o4 from "../assets/places/o4.jpg"
+import o5 from "../assets/places/o5.jpg"
+import p1 from "../assets/places/p1.jpg"
+import p2 from "../assets/places/p2.jpg"
+import p3 from "../assets/places/p3.jpg"
+import p4 from "../assets/places/p4.jpg"
+import p5 from "../assets/places/p5.jpg"
+import sr1 from "../assets/places/sr1.jpg"
+import sr2 from "../assets/places/sr2.jpg"
+import sr3 from "../assets/places/sr3.jpg"
+import sr4 from "../assets/places/sr4.jpg"
+import sr5 from "../assets/places/sr5.jpg"
+import si1 from "../assets/places/si1.jpg"
+import si2 from "../assets/places/si2.jpg"
+import si3 from "../assets/places/si3.jpg"
+import si4 from "../assets/places/si4.jpg"
+import si5 from "../assets/places/si5.jpg"
+import ta1 from "../assets/places/ta1.jpg"
+import ta2 from "../assets/places/ta2.jpg"
+import ta3 from "../assets/places/ta3.jpg"
+import ta4 from "../assets/places/ta4.jpg"
+import ta5 from "../assets/places/ta5.jpg"
+import th1 from "../assets/places/th1.jpg"
+import th2 from "../assets/places/th2.jpg"
+import th3 from "../assets/places/th3.jpg"
+import th4 from "../assets/places/th4.jpg"
+import th5 from "../assets/places/th5.jpg"
+import tu1 from "../assets/places/tu1.jpg"
+import tu2 from "../assets/places/tu2.jpg"
+import tu3 from "../assets/places/tu3.jpg"
+import tu4 from "../assets/places/tu4.jpg"
+import tu5 from "../assets/places/tu5.jpg"
+import v1 from "../assets/places/v1.jpg"
+import v2 from "../assets/places/v2.jpg"
+import v3 from "../assets/places/v3.jpg"
+import v4 from "../assets/places/v4.jpg"
+import v5 from "../assets/places/v5.jpg"
 
 // 🟢 Dummy data for destinations — add more as needed
 const destinationDetails = {
   Australia: [
-    { name: "Sydney", image: "/assets/australia1.jpg" },
-    { name: "Melbourne", image: "/assets/australia2.jpg" },
-    { name: "Gold Coast", image: "/assets/australia3.jpg" },
-    { name: "Great Barrier Reef", image: "/assets/australia4.jpg" },
-    { name: "Perth", image: "/assets/australia5.jpg" },
+    { name: "Sydney", image: a1 },
+    { name: "Melbourne", image: a2 },
+    { name: "Gold Coast", image: a3 },
+    { name: "Great Barrier Reef", image: a4 },
+    { name: "Perth", image: a5 },
   ],
   Azerbaijan: [
-    { name: "Baku", image: "/assets/azerbaijan1.jpg" },
-    { name: "Gobustan", image: "/assets/azerbaijan2.jpg" },
-    { name: "Sheki", image: "/assets/azerbaijan3.jpg" },
-    { name: "Naftalan", image: "/assets/azerbaijan4.jpg" },
-    { name: "Quba", image: "/assets/azerbaijan5.jpg" },
+    { name: "Baku", image: az1 },
+    { name: "Gobustan", image: az2 },
+    { name: "Sheki", image: az3 },
+    { name: "Naftalan", image: az4 },
+    { name: "Quba", image: az5 },
   ],
   Almaty: [
-    { name: "Zenkov Cathedral", image: "/assets/almaty1.jpg" },
-    { name: "Big Almaty Lake", image: "/assets/almaty2.jpg" },
-    { name: "Kok Tobe Hill", image: "/assets/almaty3.jpg" },
-    { name: "Shymbulak", image: "/assets/almaty4.jpg" },
-    { name: "Medeu", image: "/assets/almaty5.jpg" },
+    { name: "Zenkov Cathedral", image: ay1 },
+    { name: "Big Almaty Lake", image: ay2 },
+    { name: "Kok Tobe Hill", image: ay3 },
+    { name: "Shymbulak", image: ay4 },
+    { name: "Medeu", image: ay5 },
   ],
   Bali: [
-    { name: "Ubud", image: "/assets/bali1.jpg" },
-    { name: "Kuta Beach", image: "/assets/bali2.jpg" },
-    { name: "Tanah Lot", image: "/assets/bali3.jpg" },
-    { name: "Uluwatu Temple", image: "/assets/bali4.jpg" },
-    { name: "Tegallalang Rice Terrace", image: "/assets/bali5.jpg" },
+    { name: "Ubud", image: bali1 },
+    { name: "Kuta Beach", image: bali2 },
+    { name: "Tanah Lot", image: bali3 },
+    { name: "Uluwatu Temple", image: bali4 },
+    { name: "Tegallalang Rice Terrace", image: bali5 },
   ],
   Bhutan: [
-    { name: "Paro", image: "/assets/bhutan1.jpg" },
-    { name: "Thimphu", image: "/assets/bhutan2.jpg" },
-    { name: "Punakha", image: "/assets/bhutan3.jpg" },
-    { name: "Phobjikha Valley", image: "/assets/bhutan4.jpg" },
-    { name: "Tiger's Nest", image: "/assets/bhutan5.jpg" },
+    { name: "Paro", image: bhu1 },
+    { name: "Thimphu", image: bhu2 },
+    { name: "Punakha", image: bhu3 },
+    { name: "Phobjikha Valley", image: bhu4 },
+    { name: "Tiger's Nest", image: bhu5 },
   ],
   Dubai: [
-    { name: "Burj Khalifa", image: "/assets/dubai1.jpg" },
-    { name: "Dubai Mall", image: "/assets/dubai2.jpg" },
-    { name: "Desert Safari", image: "/assets/dubai3.jpg" },
-    { name: "Palm Islands", image: "/assets/dubai4.jpg" },
-    { name: "Dubai Frame", image: "/assets/dubai5.jpg" },
+    { name: "Burj Khalifa", image: du1 },
+    { name: "Dubai Mall", image: du2 },
+    { name: "Desert Safari", image: du3 },
+    { name: "Palm Islands", image: du4 },
+    { name: "Dubai Frame", image: du5 },
   ],
   Europe: [
-    { name: "Paris", image: "/assets/europe1.jpg" },
-    { name: "Rome", image: "/assets/europe2.jpg" },
-    { name: "Amsterdam", image: "/assets/europe3.jpg" },
-    { name: "Barcelona", image: "/assets/europe4.jpg" },
-    { name: "Prague", image: "/assets/europe5.jpg" },
+    { name: "Paris", image: e1 },
+    { name: "Rome", image: e2 },
+    { name: "Amsterdam", image: e3 },
+    { name: "Barcelona", image: e4 },
+    { name: "Prague", image: e4 },
   ],
   Georgia: [
-    { name: "Tbilisi", image: "/assets/georgia1.jpg" },
-    { name: "Batumi", image: "/assets/georgia2.jpg" },
-    { name: "Gudauri", image: "/assets/georgia3.jpg" },
-    { name: "Kazbegi", image: "/assets/georgia4.jpg" },
-    { name: "Mtskheta", image: "/assets/georgia5.jpg" },
+    { name: "Tbilisi", image: g1 },
+    { name: "Batumi", image: g2 },
+    { name: "Gudauri", image: g3 },
+    { name: "Kazbegi", image: g4 },
+    { name: "Mtskheta", image: g5 },
   ],
   Hongkong: [
-    { name: "Victoria Peak", image: "/assets/hongkong1.jpg" },
-    { name: "Hong Kong Disneyland", image: "/assets/hongkong2.jpg" },
-    { name: "Tsim Sha Tsui", image: "/assets/hongkong3.jpg" },
-    { name: "Big Buddha", image: "/assets/hongkong4.jpg" },
-    { name: "Ladies Market", image: "/assets/hongkong5.jpg" },
+    { name: "Victoria Peak", image: h1 },
+    { name: "Hong Kong Disneyland", image: h2 },
+    { name: "Tsim Sha Tsui", image: h3 },
+    { name: "Big Buddha", image: h4 },
+    { name: "Ladies Market", image: h5 },
   ],
   Japan: [
-    { name: "Tokyo", image: "/assets/japan1.jpg" },
-    { name: "Kyoto", image: "/assets/japan2.jpg" },
-    { name: "Osaka", image: "/assets/japan3.jpg" },
-    { name: "Mount Fuji", image: "/assets/japan4.jpg" },
-    { name: "Hiroshima", image: "/assets/japan5.jpg" },
+    { name: "Tokyo", image: j1 },
+    { name: "Kyoto", image: j2 },
+    { name: "Osaka", image: j3 },
+    { name: "Mount Fuji", image: j4 },
+    { name: "Hiroshima", image: j5 },
   ],
   Kambodia: [
-    { name: "Angkor Wat", image: "/assets/kambodia1.jpg" },
-    { name: "Phnom Penh", image: "/assets/kambodia2.jpg" },
-    { name: "Siem Reap", image: "/assets/kambodia3.jpg" },
-    { name: "Kampot", image: "/assets/kambodia4.jpg" },
-    { name: "Sihanoukville", image: "/assets/kambodia5.jpg" },
+    { name: "Angkor Wat", image: k1 },
+    { name: "Phnom Penh", image: k2 },
+    { name: "Siem Reap", image: k3 },
+    { name: "Kampot", image: k4 },
+    { name: "Sihanoukville", image: k5 },
   ],
   Malaysia: [
-    { name: "Kuala Lumpur", image: "/assets/malaysia1.jpg" },
-    { name: "Langkawi", image: "/assets/malaysia2.jpg" },
-    { name: "Penang", image: "/assets/malaysia3.jpg" },
-    { name: "Cameron Highlands", image: "/assets/malaysia4.jpg" },
-    { name: "Malacca", image: "/assets/malaysia5.jpg" },
+    { name: "Kuala Lumpur", image: m1 },
+    { name: "Langkawi", image: m2 },
+    { name: "Penang", image: m3 },
+    { name: "Cameron Highlands", image: m4 },
+    { name: "Malacca", image: m5 },
   ],
   Maldives: [
-    { name: "Male", image: "/assets/maldives1.jpg" },
-    { name: "Maafushi", image: "/assets/maldives2.jpg" },
-    { name: "Hulhumale", image: "/assets/maldives3.jpg" },
-    { name: "Vaadhoo Island", image: "/assets/maldives4.jpg" },
-    { name: "Fulhadhoo", image: "/assets/maldives5.jpg" },
+    { name: "Male", image: mal1 },
+    { name: "Maafushi", image: mal2 },
+    { name: "Hulhumale", image: mal3 },
+    { name: "Vaadhoo Island", image: mal4 },
+    { name: "Fulhadhoo", image: mal5 },
   ],
   Mauritius: [
-    { name: "Port Louis", image: "/assets/mauritius1.jpg" },
-    { name: "Grand Baie", image: "/assets/mauritius2.jpg" },
-    { name: "Chamarel", image: "/assets/mauritius3.jpg" },
-    { name: "Le Morne", image: "/assets/mauritius4.jpg" },
-    { name: "Flic en Flac", image: "/assets/mauritius5.jpg" },
+    { name: "Port Louis", image: mau1 },
+    { name: "Grand Baie", image: mau2 },
+    { name: "Chamarel", image: mau3 },
+    { name: "Le Morne", image: mau4 },
+    { name: "Flic en Flac", image: mau5 },
   ],
   Nepal: [
-    { name: "Kathmandu", image: "/assets/nepal1.jpg" },
-    { name: "Pokhara", image: "/assets/nepal2.jpg" },
-    { name: "Chitwan", image: "/assets/nepal3.jpg" },
-    { name: "Lumbini", image: "/assets/nepal4.jpg" },
-    { name: "Nagarkot", image: "/assets/nepal5.jpg" },
+    { name: "Kathmandu", image: ne1 },
+    { name: "Pokhara", image: ne2 },
+    { name: "Chitwan", image: ne3 },
+    { name: "Lumbini", image: ne4 },
+    { name: "Nagarkot", image: ne5 },
   ],
   Newzealand: [
-    { name: "Auckland", image: "/assets/newzealand1.jpg" },
-    { name: "Queenstown", image: "/assets/newzealand2.jpg" },
-    { name: "Rotorua", image: "/assets/newzealand3.jpg" },
-    { name: "Christchurch", image: "/assets/newzealand4.jpg" },
-    { name: "Wellington", image: "/assets/newzealand5.jpg" },
+    { name: "Auckland", image: nz1 },
+    { name: "Queenstown", image: nz2 },
+    { name: "Rotorua", image: nz3 },
+    { name: "Christchurch", image: nz4 },
+    { name: "Wellington", image: nz5 },
   ],
   Oman: [
-    { name: "Muscat", image: "/assets/oman1.jpg" },
-    { name: "Nizwa", image: "/assets/oman2.jpg" },
-    { name: "Salalah", image: "/assets/oman3.jpg" },
-    { name: "Wahiba Sands", image: "/assets/oman4.jpg" },
-    { name: "Sur", image: "/assets/oman5.jpg" },
+    { name: "Muscat", image: o1 },
+    { name: "Nizwa", image: o2 },
+    { name: "Salalah", image: o3 },
+    { name: "Wahiba Sands", image: o4 },
+    { name: "Sur", image: o5 },
   ],
   Philipines: [
-    { name: "Manila", image: "/assets/philipines1.jpg" },
-    { name: "Cebu", image: "/assets/philipines2.jpg" },
-    { name: "Boracay", image: "/assets/philipines3.jpg" },
-    { name: "Palawan", image: "/assets/philipines4.jpg" },
-    { name: "Bohol", image: "/assets/philipines5.jpg" },
+    { name: "Manila", image: p1 },
+    { name: "Cebu", image: p2 },
+    { name: "Boracay", image: p3 },
+    { name: "Palawan", image: p4 },
+    { name: "Bohol", image: p5 },
   ],
   Srilanka: [
-    { name: "Colombo", image: "/assets/srilanka1.jpg" },
-    { name: "Kandy", image: "/assets/srilanka2.jpg" },
-    { name: "Galle", image: "/assets/srilanka3.jpg" },
-    { name: "Nuwara Eliya", image: "/assets/srilanka4.jpg" },
-    { name: "Sigiriya", image: "/assets/srilanka5.jpg" },
+    { name: "Colombo", image: sr1 },
+    { name: "Kandy", image: sr2 },
+    { name: "Galle", image: sr3 },
+    { name: "Nuwara Eliya", image: sr4 },
+    { name: "Sigiriya", image: sr5 },
   ],
     Singapore: [
-    { name: "Marina Bay Sands", image: "/assets/singapore1.jpg" },
-    { name: "Gardens by the Bay", image: "/assets/singapore2.jpg" },
-    { name: "Sentosa Island", image: "/assets/singapore3.jpg" },
-    { name: "Universal Studios", image: "/assets/singapore4.jpg" },
-    { name: "Singapore Flyer", image: "/assets/singapore5.jpg" },
+    { name: "Marina Bay Sands", image: si1 },
+    { name: "Gardens by the Bay", image: si2 },
+    { name: "Sentosa Island", image: si3 },
+    { name: "Universal Studios", image: si4 },
+    { name: "Singapore Flyer", image: si5 },
   ],
   Tajikistan: [
-    { name: "Dushanbe", image: "/assets/tajikistan1.jpg" },
-    { name: "Iskanderkul Lake", image: "/assets/tajikistan2.jpg" },
-    { name: "Pamir Mountains", image: "/assets/tajikistan3.jpg" },
-    { name: "Fann Mountains", image: "/assets/tajikistan4.jpg" },
-    { name: "Khorog", image: "/assets/tajikistan5.jpg" },
+    { name: "Dushanbe", image: ta1 },
+    { name: "Iskanderkul Lake", image: ta2 },
+    { name: "Pamir Mountains", image: ta3 },
+    { name: "Fann Mountains", image: ta4 },
+    { name: "Khorog", image: ta5 },
   ],
   Thailand: [
-    { name: "Bangkok", image: "/assets/thailand1.jpg" },
-    { name: "Phuket", image: "/assets/thailand2.jpg" },
-    { name: "Chiang Mai", image: "/assets/thailand3.jpg" },
-    { name: "Pattaya", image: "/assets/thailand4.jpg" },
-    { name: "Krabi", image: "/assets/thailand5.jpg" },
+    { name: "Bangkok", image: th1 },
+    { name: "Phuket", image: th2 },
+    { name: "Chiang Mai", image: th3 },
+    { name: "Pattaya", image: th4 },
+    { name: "Krabi", image: th5 },
   ],
   Turkey: [
-    { name: "Istanbul", image: "/assets/turkey1.jpg" },
-    { name: "Cappadocia", image: "/assets/turkey2.jpg" },
-    { name: "Pamukkale", image: "/assets/turkey3.jpg" },
-    { name: "Antalya", image: "/assets/turkey4.jpg" },
-    { name: "Ephesus", image: "/assets/turkey5.jpg" },
+    { name: "Istanbul", image: tu1 },
+    { name: "Cappadocia", image: tu2 },
+    { name: "Pamukkale", image: tu3 },
+    { name: "Antalya", image: tu4 },
+    { name: "Ephesus", image: tu5 },
   ],
   Vietnam: [
-    { name: "Hanoi", image: "/assets/vietnam1.jpg" },
-    { name: "Halong Bay", image: "/assets/vietnam2.jpg" },
-    { name: "Ho Chi Minh City", image: "/assets/vietnam3.jpg" },
-    { name: "Hoi An", image: "/assets/vietnam4.jpg" },
-    { name: "Sapa", image: "/assets/vietnam5.jpg" },
+    { name: "Hanoi", image: v1 },
+    { name: "Halong Bay", image: v2 },
+    { name: "Ho Chi Minh City", image: v3 },
+    { name: "Hoi An", image: v4 },
+    { name: "Sapa", image: v5 },
   ],
-   "Guwahati - Shillong": [
+   "Guwahati -Shillong": [
     { name: "Kamakhya Temple", image: "/assets/guwahati1.jpg" },
     { name: "Umiam Lake", image: "/assets/shillong1.jpg" },
     { name: "Elephant Falls", image: "/assets/shillong2.jpg" },
@@ -186,7 +306,7 @@ const destinationDetails = {
     { name: "Dirang", image: "/assets/arunachal4.jpg" },
     { name: "Sela Pass", image: "/assets/arunachal5.jpg" },
   ],
-  "Sikkim - Darjeeling": [
+  "Sikkim -Darjeeling": [
     { name: "Tsomgo Lake", image: "/assets/sikkim1.jpg" },
     { name: "Nathula Pass", image: "/assets/sikkim2.jpg" },
     { name: "Darjeeling Himalayan Railway", image: "/assets/darjeeling1.jpg" },
@@ -242,7 +362,7 @@ const destinationDetails = {
     { name: "Sonamarg", image: "/assets/kashmir4.jpg" },
     { name: "Dal Lake", image: "/assets/kashmir5.jpg" },
   ],
-  HyderabadTelangana: [
+  "Hyderabad Telangana": [
     { name: "Charminar", image: "/assets/hyderabad1.jpg" },
     { name: "Golconda Fort", image: "/assets/hyderabad2.jpg" },
     { name: "Ramoji Film City", image: "/assets/hyderabad3.jpg" },

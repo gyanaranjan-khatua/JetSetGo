@@ -137,7 +137,7 @@ const DestinationShowcase = () => {
       </div>
 
       <div className="max-w-7xl mx-auto mb-16">
-        <h3 className="text-2xl font-semibold text-blue-400 mb-6">International Holidays</h3>
+        <h3 className="text-2xl font-semibold text-blue-400 mb-6">International Tours</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {International.map((place) => (
             <Card key={place} name={place} img={intlImages[place]} onClick={handleCardClick} />
