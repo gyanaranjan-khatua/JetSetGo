@@ -121,6 +121,96 @@ import v2 from "../assets/places/v2.jpg"
 import v3 from "../assets/places/v3.jpg"
 import v4 from "../assets/places/v4.jpg"
 import v5 from "../assets/places/v5.jpg"
+import gs1 from "../assets/places2/gs1.jpg"
+import gs2 from "../assets/places2/gs2.jpg"
+import gs3 from "../assets/places2/gs3.jpg"
+import gs4 from "../assets/places2/gs4.jpg"
+import gs5 from "../assets/places2/gs5.jpg"
+import anu1 from "../assets/places2/anu1.jpg"
+import anu2 from "../assets/places2/anu2.jpg"
+import anu3 from "../assets/places2/anu3.jpg"
+import anu4 from "../assets/places2/anu4.jpg"
+import anu5 from "../assets/places2/anu5.jpg"
+import sd1 from "../assets/places2/sd1.jpg"
+import sd2 from "../assets/places2/sd2.jpg"
+import sd3 from "../assets/places2/sd3.jpg"
+import sd4 from "../assets/places2/sd4.jpg"
+import sd5 from "../assets/places2/sd5.jpg"
+import wb1 from "../assets/places2/wb1.jpg"
+import wb2 from "../assets/places2/wb2.jpg"
+import wb3 from "../assets/places2/wb3.jpg"
+import wb4 from "../assets/places2/wb4.jpg"
+import wb5 from "../assets/places2/wb5.jpg"
+import od1 from "../assets/places2/od1.jpg"
+import od2 from "../assets/places2/od2.jpg"
+import od3 from "../assets/places2/od3.jpg"
+import od4 from "../assets/places2/od4.jpg"
+import od5 from "../assets/places2/od5.jpg"
+import mp1 from "../assets/places2/mp1.jpg"
+import mp2 from "../assets/places2/mp2.jpg"
+import mp3 from "../assets/places2/mp3.jpg"
+import mp4 from "../assets/places2/mp4.jpg"
+import mp5 from "../assets/places2/mp5.jpg"
+import vi1 from "../assets/places2/vi1.jpg"
+import vi2 from "../assets/places2/vi2.jpg"
+import vi3 from "../assets/places2/vi3.jpg"
+import vi4 from "../assets/places2/vi4.jpg"
+import vi5 from "../assets/places2/vi5.jpg"
+import tn1 from "../assets/places2/tn1.jpg"
+import tn2 from "../assets/places2/tn2.jpg"
+import tn3 from "../assets/places2/tn3.jpg"
+import tn4 from "../assets/places2/tn4.jpg"
+import tn5 from "../assets/places2/tn5.png"
+import ke1 from "../assets/places2/ke1.jpg"
+import ke2 from "../assets/places2/ke2.jpg"
+import ke3 from "../assets/places2/ke3.jpg"
+import ke4 from "../assets/places2/ke4.png"
+import ke5 from "../assets/places2/ke5.jpg"
+import ht1 from "../assets/places2/ht1.jpg"
+import ht2 from "../assets/places2/ht2.jpg"
+import ht3 from "../assets/places2/ht3.jpg"
+import ht4 from "../assets/places2/ht4.jpg"
+import ht5 from "../assets/places2/ht5.jpg"
+import jk1 from "../assets/places2/jk1.jpg"
+import jk2 from "../assets/places2/jk2.jpg"
+import jk3 from "../assets/places2/jk3.jpg"
+import jk4 from "../assets/places2/jk4.jpg"
+import jk5 from "../assets/places2/jk5.jpg"
+import mh1 from "../assets/places2/mh1.jpg"
+import mh2 from "../assets/places2/mh2.jpg"
+import mh3 from "../assets/places2/mh3.jpg"
+import mh4 from "../assets/places2/mh4.jpg"
+import mh5 from "../assets/places2/mh5.jpg"
+import uk1 from "../assets/places2/uk1.jpg"
+import uk2 from "../assets/places2/uk2.jpg"
+import uk3 from "../assets/places2/uk3.jpg"
+import uk4 from "../assets/places2/uk4.jpg"
+import uk5 from "../assets/places2/uk5.jpg"
+import gj1 from "../assets/places2/gj1.jpg"
+import gj2 from "../assets/places2/gj2.jpg"
+import gj3 from "../assets/places2/gj3.jpg"
+import gj4 from "../assets/places2/gj4.jpg"
+import gj5 from "../assets/places2/gj5.jpg"
+import rj1 from "../assets/places2/rj1.jpg"
+import rj2 from "../assets/places2/rj2.jpg"
+import rj3 from "../assets/places2/rj3.jpg"
+import rj4 from "../assets/places2/rj4.jpg"
+import rj5 from "../assets/places2/rj5.jpg"
+import him1 from "../assets/places2/him1.jpg"
+import him2 from "../assets/places2/him2.jpg"
+import him3 from "../assets/places2/him3.jpg"
+import him4 from "../assets/places2/him4.jpg"
+import him5 from "../assets/places2/him5.jpg"
+import up1 from "../assets/places2/up1.jpg"
+import up2 from "../assets/places2/up2.jpg"
+import up3 from "../assets/places2/up3.jpg"
+import up4 from "../assets/places2/up4.jpg"
+import up5 from "../assets/places2/up5.jpg"
+import ll1 from "../assets/places2/ll1.jpg"
+import ll2 from "../assets/places2/ll2.jpg"
+import ll3 from "../assets/places2/ll3.jpg"
+import ll4 from "../assets/places2/ll4.jpg"
+import ll5 from "../assets/places2/ll5.jpg"
 
 // 🟢 Dummy data for destinations — add more as needed
 const destinationDetails = {
@@ -293,137 +383,137 @@ const destinationDetails = {
     { name: "Sapa", image: v5 },
   ],
    "Guwahati -Shillong": [
-    { name: "Kamakhya Temple", image: "/assets/guwahati1.jpg" },
-    { name: "Umiam Lake", image: "/assets/shillong1.jpg" },
-    { name: "Elephant Falls", image: "/assets/shillong2.jpg" },
-    { name: "Shillong Peak", image: "/assets/shillong3.jpg" },
-    { name: "Cherrapunji", image: "/assets/shillong4.jpg" },
+    { name: "Kamakhya Temple", image: gs1 },
+    { name: "Umiam Lake", image: gs2 },
+    { name: "Elephant Falls", image: gs3 },
+    { name: "Shillong Peak", image: gs4 },
+    { name: "Cherrapunji", image: gs5 },
   ],
   "Arunachal Pradesh": [
-    { name: "Tawang Monastery", image: "/assets/arunachal1.jpg" },
-    { name: "Ziro Valley", image: "/assets/arunachal2.jpg" },
-    { name: "Bomdila", image: "/assets/arunachal3.jpg" },
-    { name: "Dirang", image: "/assets/arunachal4.jpg" },
-    { name: "Sela Pass", image: "/assets/arunachal5.jpg" },
+    { name: "Tawang Monastery", image: anu1 },
+    { name: "Ziro Valley", image: anu2 },
+    { name: "Bomdila", image: anu3 },
+    { name: "Dirang", image: anu4 },
+    { name: "Sela Pass", image: anu5 },
   ],
   "Sikkim -Darjeeling": [
-    { name: "Tsomgo Lake", image: "/assets/sikkim1.jpg" },
-    { name: "Nathula Pass", image: "/assets/sikkim2.jpg" },
-    { name: "Darjeeling Himalayan Railway", image: "/assets/darjeeling1.jpg" },
-    { name: "Tiger Hill", image: "/assets/darjeeling2.jpg" },
-    { name: "Batasia Loop", image: "/assets/darjeeling3.jpg" },
+    { name: "Tsomgo Lake", image: sd1 },
+    { name: "Nathula Pass", image: sd2 },
+    { name: "Darjeeling Himalayan Railway", image: sd3 },
+    { name: "Tiger Hill", image: sd4 },
+    { name: "Batasia Loop", image: sd5 },
   ],
   Kolkata: [
-    { name: "Victoria Memorial", image: "/assets/kolkata1.jpg" },
-    { name: "Howrah Bridge", image: "/assets/kolkata2.jpg" },
-    { name: "Dakshineswar Temple", image: "/assets/kolkata3.jpg" },
-    { name: "Eco Park", image: "/assets/kolkata4.jpg" },
-    { name: "Science City", image: "/assets/kolkata5.jpg" },
+    { name: "Victoria Memorial", image: wb1 },
+    { name: "Howrah Bridge", image: wb2 },
+    { name: "Dakshineswar Temple", image: wb3 },
+    { name: "Eco Park", image: wb4 },
+    { name: "Science City", image: wb5 },
   ],
   Odisha: [
-    { name: "Puri Jagannath Temple", image: "/assets/odisha1.jpg" },
-    { name: "Konark Sun Temple", image: "/assets/odisha2.jpg" },
-    { name: "Chilika Lake", image: "/assets/odisha3.jpg" },
-    { name: "Simlipal National Park", image: "/assets/odisha4.jpg" },
-    { name: "Lingaraj Temple", image: "/assets/odisha5.jpg" },
+    { name: "Puri Jagannath Temple", image: od1 },
+    { name: "Konark Sun Temple", image: od2 },
+    { name: "Chilika Lake", image: od3 },
+    { name: "Simlipal National Park", image: od4 },
+    { name: "Lingaraj Temple", image: od5 },
   ],
   "Madhya Pradesh": [
-    { name: "Khajuraho Temples", image: "/assets/mp1.jpg" },
-    { name: "Kanha National Park", image: "/assets/mp2.jpg" },
-    { name: "Bhedaghat Marble Rocks", image: "/assets/mp3.jpg" },
-    { name: "Sanchi Stupa", image: "/assets/mp4.jpg" },
-    { name: "Ujjain Mahakaleshwar", image: "/assets/mp5.jpg" },
+    { name: "Khajuraho Temples", image: mp1 },
+    { name: "Kanha National Park", image: mp2 },
+    { name: "Bhedaghat Marble Rocks", image: mp3 },
+    { name: "Sanchi Stupa", image: mp4 },
+    { name: "Ujjain Mahakaleshwar", image: mp5 },
   ],
   Visakhapatnam: [
-    { name: "RK Beach", image: "/assets/vizag1.jpg" },
-    { name: "Araku Valley", image: "/assets/vizag2.jpg" },
-    { name: "Kailasagiri", image: "/assets/vizag3.jpg" },
-    { name: "Submarine Museum", image: "/assets/vizag4.jpg" },
-    { name: "Borra Caves", image: "/assets/vizag5.jpg" },
+    { name: "RK Beach", image: vi1 },
+    { name: "Araku Valley", image: vi2 },
+    { name: "Kailasagiri", image: vi3 },
+    { name: "Submarine Museum", image: vi4 },
+    { name: "Borra Caves", image: vi5 },
   ],
   Tamilnadu: [
-    { name: "Meenakshi Temple", image: "/assets/tamilnadu1.jpg" },
-    { name: "Ooty", image: "/assets/tamilnadu2.jpg" },
-    { name: "Kodaikanal", image: "/assets/tamilnadu3.jpg" },
-    { name: "Rameswaram", image: "/assets/tamilnadu4.jpg" },
-    { name: "Mahabalipuram", image: "/assets/tamilnadu5.jpg" },
+    { name: "Meenakshi Temple", image: tn1 },
+    { name: "Ooty", image: tn2 },
+    { name: "Kodaikanal", image: tn3 },
+    { name: "Rameswaram", image: tn4 },
+    { name: "Mahabalipuram", image: tn5 },
   ],
   Kerala: [
-    { name: "Alleppey Backwaters", image: "/assets/kerala1.jpg" },
-    { name: "Munnar", image: "/assets/kerala2.jpg" },
-    { name: "Kumarakom", image: "/assets/kerala3.jpg" },
-    { name: "Thekkady", image: "/assets/kerala4.jpg" },
-    { name: "Kovalam Beach", image: "/assets/kerala5.jpg" },
+    { name: "Alleppey Backwaters", image: ke1 },
+    { name: "Munnar", image: ke2 },
+    { name: "Kumarakom", image: ke3 },
+    { name: "Thekkady", image: ke4 },
+    { name: "Kovalam Beach", image: ke5 },
   ],
     Kashmir: [
-    { name: "Srinagar", image: "/assets/kashmir1.jpg" },
-    { name: "Gulmarg", image: "/assets/kashmir2.jpg" },
-    { name: "Pahalgam", image: "/assets/kashmir3.jpg" },
-    { name: "Sonamarg", image: "/assets/kashmir4.jpg" },
-    { name: "Dal Lake", image: "/assets/kashmir5.jpg" },
+    { name: "Srinagar", image: jk1 },
+    { name: "Gulmarg", image: jk2 },
+    { name: "Pahalgam", image: jk3 },
+    { name: "Sonamarg", image: jk4 },
+    { name: "Dal Lake", image: jk5 },
   ],
   "Hyderabad Telangana": [
-    { name: "Charminar", image: "/assets/hyderabad1.jpg" },
-    { name: "Golconda Fort", image: "/assets/hyderabad2.jpg" },
-    { name: "Ramoji Film City", image: "/assets/hyderabad3.jpg" },
-    { name: "Hussain Sagar", image: "/assets/hyderabad4.jpg" },
-    { name: "Birla Mandir", image: "/assets/hyderabad5.jpg" },
+    { name: "Charminar", image: ht1 },
+    { name: "Golconda Fort", image: ht2 },
+    { name: "Ramoji Film City", image: ht3 },
+    { name: "Hussain Sagar", image: ht4 },
+    { name: "Birla Mandir", image: ht5 },
   ],
   Maharashtra: [
-    { name: "Mumbai", image: "/assets/maharashtra1.jpg" },
-    { name: "Pune", image: "/assets/maharashtra2.jpg" },
-    { name: "Lonavala", image: "/assets/maharashtra3.jpg" },
-    { name: "Mahabaleshwar", image: "/assets/maharashtra4.jpg" },
-    { name: "Ajanta & Ellora", image: "/assets/maharashtra5.jpg" },
+    { name: "Mumbai", image: mh1 },
+    { name: "Pune", image: mh2 },
+    { name: "Lonavala", image: mh3 },
+    { name: "Mahabaleshwar", image: mh4 },
+    { name: "Ajanta & Ellora", image: mh5 },
   ],
   Uttarakhand: [
-    { name: "Dehradun", image: "/assets/uttarakhand1.jpg" },
-    { name: "Mussoorie", image: "/assets/uttarakhand2.jpg" },
-    { name: "Nainital", image: "/assets/uttarakhand3.jpg" },
-    { name: "Rishikesh", image: "/assets/uttarakhand4.jpg" },
-    { name: "Haridwar", image: "/assets/uttarakhand5.jpg" },
+    { name: "Dehradun", image: uk1 },
+    { name: "Mussoorie", image: uk2 },
+    { name: "Nainital", image: uk3 },
+    { name: "Rishikesh", image: uk4 },
+    { name: "Haridwar", image: uk5 },
   ],
   Gujarat: [
-    { name: "Ahmedabad", image: "/assets/gujarat1.jpg" },
-    { name: "Gir National Park", image: "/assets/gujarat2.jpg" },
-    { name: "Dwarka", image: "/assets/gujarat3.jpg" },
-    { name: "Somnath", image: "/assets/gujarat4.jpg" },
-    { name: "Statue of Unity", image: "/assets/gujarat5.jpg" },
+    { name: "Ahmedabad", image: gj1 },
+    { name: "Gir National Park", image: gj2 },
+    { name: "Dwarka", image: gj3 },
+    { name: "Somnath", image: gj4 },
+    { name: "Statue of Unity", image: gj5 },
   ],
   Rajasthan: [
-    { name: "Jaipur", image: "/assets/rajasthan1.jpg" },
-    { name: "Udaipur", image: "/assets/rajasthan2.jpg" },
-    { name: "Jaisalmer", image: "/assets/rajasthan3.jpg" },
-    { name: "Jodhpur", image: "/assets/rajasthan4.jpg" },
-    { name: "Pushkar", image: "/assets/rajasthan5.jpg" },
+    { name: "Jaipur", image: rj1 },
+    { name: "Udaipur", image: rj2 },
+    { name: "Jaisalmer", image: rj3 },
+    { name: "Jodhpur", image: rj4 },
+    { name: "Pushkar", image: rj5 },
   ],
   Himachal: [
-    { name: "Shimla", image: "/assets/himachal1.jpg" },
-    { name: "Manali", image: "/assets/himachal2.jpg" },
-    { name: "Dharamshala", image: "/assets/himachal3.jpg" },
-    { name: "Kullu", image: "/assets/himachal4.jpg" },
-    { name: "Spiti Valley", image: "/assets/himachal5.jpg" },
+    { name: "Shimla", image: him1 },
+    { name: "Manali", image: him2 },
+    { name: "Dharamshala", image: him3 },
+    { name: "Kullu", image: him4 },
+    { name: "Spiti Valley", image: him5 },
   ],
   Uttarpradesh: [
-    { name: "Varanasi", image: "/assets/uttarpradesh1.jpg" },
-    { name: "Agra", image: "/assets/uttarpradesh2.jpg" },
-    { name: "Lucknow", image: "/assets/uttarpradesh3.jpg" },
-    { name: "Mathura", image: "/assets/uttarpradesh4.jpg" },
-    { name: "Prayagraj", image: "/assets/uttarpradesh5.jpg" },
+    { name: "Varanasi", image: up1 },
+    { name: "Agra", image: up2 },
+    { name: "Lucknow", image: up3 },
+    { name: "Mathura", image: up4 },
+    { name: "Prayagraj", image: up5 },
   ],
-  GoldenTriangle: [
-    { name: "Delhi", image: "/assets/golden1.jpg" },
-    { name: "Agra", image: "/assets/golden2.jpg" },
-    { name: "Jaipur", image: "/assets/golden3.jpg" },
-    { name: "Fatehpur Sikri", image: "/assets/golden4.jpg" },
-    { name: "Amber Fort", image: "/assets/golden5.jpg" },
-  ],
-  LehLadakh: [
-    { name: "Leh", image: "/assets/leh1.jpg" },
-    { name: "Nubra Valley", image: "/assets/leh2.jpg" },
-    { name: "Pangong Lake", image: "/assets/leh3.jpg" },
-    { name: "Magnetic Hill", image: "/assets/leh4.jpg" },
-    { name: "Tso Moriri", image: "/assets/leh5.jpg" },
+  // GoldenTriangle: [
+  //   { name: "Delhi", image: "/assets/golden1.jpg" },
+  //   { name: "Agra", image: "/assets/golden2.jpg" },
+  //   { name: "Jaipur", image: "/assets/golden3.jpg" },
+  //   { name: "Fatehpur Sikri", image: "/assets/golden4.jpg" },
+  //   { name: "Amber Fort", image: "/assets/golden5.jpg" },
+  // ],
+  "Leh-Ladakh": [
+    { name: "Leh", image: ll1 },
+    { name: "Nubra Valley", image: ll2 },
+    { name: "Pangong Lake", image: ll3 },
+    { name: "Magnetic Hill", image: ll4 },
+    { name: "Tso Moriri", image: ll5 },
   ],
 };
 
